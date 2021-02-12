@@ -8,4 +8,7 @@ output:
 pagetitle: "Slides"
 ---
 
-
+- [starting-rmarkdown](./starting-rmarkdown)
+- [starting-ggplot2](./starting-ggplot2)
+- [starting-readr](./starting-readr)
+- [starting-dplyr](./starting-dplyr)
