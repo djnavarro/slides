@@ -32,13 +32,13 @@ library(tidyverse)
 library(metathis)
 meta() %>%
   meta_general(
-    description = "An introduction to R markdown, blogdown and github",
+    description = "An introduction to R markdown",
   ) %>% 
-  meta_name("github-repo" = "djnavarro/robust-tools") %>% 
+  meta_name("github-repo" = "djnavarro/slides") %>% 
   meta_social(
     title = "",
-    url = "https://robust-tools.djnavarro.net/website/",
-    image = "https://robust-tools.djnavarro.net/website/img/twitter-card.png",
+    url = "https://slides.djnavarro.net/starting-rmarkdown/",
+    image = "https://slides.djnavarro.net/starting-rmarkdown/img/twitter-image.png",
     image_alt = "",
     og_type = "website",
     og_author = "Danielle Navarro",
