@@ -23,7 +23,6 @@ output:
 ```
 
 ```{r load-packages, message=FALSE, echo=FALSE}
-library(countdown)
 library(tidyverse)
 ```
 
