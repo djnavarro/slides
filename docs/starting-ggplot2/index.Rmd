@@ -42,9 +42,6 @@ meta() %>%
   )
 ```
 
-```{r load-packages, message=FALSE, echo=FALSE}
-library(countdown)
-```
 
 ```{r include=FALSE}
 hook_source <- knitr::knit_hooks$get('source')
@@ -207,10 +204,6 @@ class: middle
 - how to show the manufacture `year` as the x-value?  
 - how to show the number of cylinders `cyl` as the colour?
 - (bonus): how to include a regression line instead of dot points?
-
-```{r echo=FALSE}
-countdown(minutes = 2)
-```
 
 ???
 
@@ -631,10 +624,6 @@ code along with me while we...
 - add the `geom_smooth()` layer
 - add a third layer with `geom_rug()`
 
-```{r echo=FALSE}
-countdown(minutes = 2)
-```
-
 
 
 ---
@@ -819,9 +808,6 @@ geom_smooth()
 ]
 
 
-```{r, echo=FALSE}
-countdown(minutes = 2)
-```
 ---
 
 class: middle
@@ -862,9 +848,6 @@ picture <- ggplot(data = dino) +
 plot(picture)
 ```
 
-```{r, echo=FALSE}
-countdown(minutes = 2)
-```
 ]
 
 --
