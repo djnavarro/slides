@@ -38,7 +38,7 @@ meta() %>%
   meta_social(
     title = "An introduction to R markdown",
     url = "https://slides.djnavarro.net/starting-rmarkdown/",
-    image = "https://slides.djnavarro.net/starting-rmarkdown/img/twitter-image.png",
+    image = "https://slides.djnavarro.net/starting-rmarkdown/img/twitter-image.jpg",
     image_alt = "",
     og_type = "website",
     og_author = "Danielle Navarro",
