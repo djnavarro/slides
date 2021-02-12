@@ -44,7 +44,6 @@ meta() %>%
 ```
 
 ```{r load-packages, message=FALSE, echo=FALSE}
-library(countdown)
 library(tidyverse)
 ```
 
@@ -215,9 +214,6 @@ background-size: cover
 <p style="text-align:right">Exercise #1:<br>discuss this study!</p>
 ]
 
-```{r echo=FALSE}
-countdown(minutes = 1, color_background = "white")
-```
 ]
 
 
@@ -432,7 +428,7 @@ background-size: cover
 
 .hand[Group, summarise...]
 
-```{r frames-group, results='hide'}
+```{r frames-group, results='hide', message=FALSE}
 frames %>%
   group_by(test_item, sample_size, n_obs, condition) %>%
   summarise(response = mean(response))
