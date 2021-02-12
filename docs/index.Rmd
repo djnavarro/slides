@@ -12,3 +12,5 @@ pagetitle: "Slides"
 - [starting-ggplot2](./starting-ggplot2)
 - [starting-readr](./starting-readr)
 - [starting-dplyr](./starting-dplyr)
+- [starting-programming](./starting-programming)
+- [starting-functions](./starting-functions)
