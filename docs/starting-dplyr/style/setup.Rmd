@@ -12,8 +12,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 dev.off <- function(){
   invisible(grDevices::dev.off())
 }
-# countdown pkg for all slide decks
-library(countdown)
+
 # set seed
 set.seed(1234)
 ```
