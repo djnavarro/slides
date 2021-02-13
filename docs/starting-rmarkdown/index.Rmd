@@ -173,7 +173,7 @@ background-size: cover
 class: middle
 
 ```{r, echo=FALSE}
-knitr::include_graphics("img/word_document_surface.png", dpi = 200)
+knitr::include_graphics("img/word_document_surface.png", dpi = 300)
 ```
 
 
@@ -198,10 +198,8 @@ class: middle
 
 class: middle
 
-<br>
-<br>
-```{r, echo=FALSE}
-knitr::include_graphics("img/html_document_surface.png", dpi = 150)
+```{r, echo=FALSE, out.height="80%"}
+knitr::include_graphics("img/html_document_surface.png")
 ```
 
 
@@ -280,7 +278,7 @@ all kinds of useful things about R markdown.
 
 ## Where can you find these slides?
 
-https://djnavarro.net/starting-rmarkdown
+https://slides.djnavarro.net/starting-rmarkdown
 ```
 ]
 
@@ -307,7 +305,7 @@ all kinds of useful things about R markdown.
 
 ## Where can you find these slides?
 
-https://djnavarro.net/starting-rmarkdown
+https://slides.djnavarro.net/starting-rmarkdown
 
 ---
 
@@ -338,8 +336,8 @@ class: middle
 
 ## Professional websites
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_professional_site.png", dpi = 300)
+```{r, echo=FALSE, out.height="70%", out.width="50%"}
+knitr::include_graphics("img/example_professional_site.png")
 ```
 
 ---
@@ -348,8 +346,8 @@ class: middle
 
 ## Visual blogs
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_visual_blog.png", dpi = 300)
+```{r, echo=FALSE, out.height="70%", out.width="50%"}
+knitr::include_graphics("img/example_visual_blog.png")
 ```
 
 ---
@@ -358,8 +356,8 @@ class: middle
 
 ## Books
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_book.png", dpi = 150)
+```{r, echo=FALSE, out.height="70%", out.width="80%"}
+knitr::include_graphics("img/example_book.png")
 ```
 
 
@@ -369,8 +367,8 @@ class: middle
 
 ## Academic papers
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_papers.png", dpi = 200)
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
+knitr::include_graphics("img/example_papers.png")
 ```
 
 ---
@@ -379,8 +377,8 @@ class: middle
 
 ## Slide decks
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_slides.png", dpi = 150)
+```{r, echo=FALSE, out.height="70%", out.width="80%"}
+knitr::include_graphics("img/example_slides.png")
 ```
 
 ---
@@ -389,8 +387,8 @@ class: middle
 
 ## Résumés
 
-```{r, echo=FALSE}
-knitr::include_graphics("img/example_resume.png", dpi = 200)
+```{r, echo=FALSE, out.height="70%", out.width="80%"}
+knitr::include_graphics("img/example_resume.png")
 ```
 
 ---
@@ -751,7 +749,7 @@ class: middle
 
 ## Let's dissect the document we just wrote!
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
 knitr::include_graphics("img/my_first_rmd_plain.png", dpi = 200)
 
 ```
@@ -760,7 +758,7 @@ knitr::include_graphics("img/my_first_rmd_plain.png", dpi = 200)
 
 ## The part inside ` --- ` is the "YAML header"
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
 knitr::include_graphics("img/my_first_rmd_yaml.png", dpi = 200)
 
 ```
@@ -772,7 +770,7 @@ class: middle
 
 <h2>The part inside <code>&#96;&#96;&#96;{r}</code> is R code</h2>
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
 knitr::include_graphics("img/my_first_rmd_r.png", dpi = 200)
 ```
 
@@ -782,7 +780,7 @@ knitr::include_graphics("img/my_first_rmd_r.png", dpi = 200)
 
 ## The rest is markdown 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
 knitr::include_graphics("img/my_first_rmd_markdown.png", dpi = 200)
 ```
 
@@ -809,7 +807,7 @@ background-size: cover
 
 ## The YAML header is used for customisation
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.height="70%", out.width="60%"}
 knitr::include_graphics("img/my_first_rmd_yaml.png", dpi = 200)
 
 ```
