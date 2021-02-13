@@ -1046,6 +1046,34 @@ class: middle, inverse
 .hand[There's more to learn about LaTeX equations<br>but that is a topic for another time!]
 
 
+---
+
+class: middle, inverse
+
+background-image: url("img/silhouette.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-bisque-number[9]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[Publishing documents]]
+```{r, echo=FALSE}
+#knitr::include_graphics("img/blogdown.png", dpi = 1000)
+```
+]
+
+---
+
+class: middle, inverse
+
+.hand[Demonstration!]
+
+- upload the .Rmd and .html files: e.g., dropbox, github, osf
+- one-click publishing with RStudio through RPubs
+
+
 
 ---
 
