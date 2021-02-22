@@ -93,7 +93,7 @@ class: middle
 ## Where can I find the resources?
 
 - These slides: [slides.djnavarro.net/starting-rmarkdown](https://slides.djnavarro.net/starting-rmarkdown)
-- YouTube videos: [playlist](https://www.youtube.com/playlist?list=PLRPB0ZzEYegM86awo590bP1MJjQbjdR9E)
+- YouTube videos: [youtube.djnavarro.net/starting-rmarkdown](https://youtube.djnavarro.net/starting-rmarkdown)
 
 
 ---
