@@ -38,7 +38,7 @@ meta() %>%
   meta_social(
     title = "Installing R, RStudio and R packages",
     url = "https://slides.djnavarro.net/installing-r/",
-    image = "https://slides.djnavarro.net/installing-r/img/twitter-image.jpg",
+    image = "https://slides.djnavarro.net/installing-r/img/twitter-image.png",
     image_alt = "",
     og_type = "website",
     og_author = "Danielle Navarro",
