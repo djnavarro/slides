@@ -1,5 +1,5 @@
 ---
-title: "> &nbsp;&nbsp; `r emo::ji('book')` `r emo::ji('computer')` <br>> &nbsp;&nbsp; Installing R on your computer"
+title: "> &nbsp;&nbsp; `r emo::ji('computer')` `r emo::ji('package')` <br>> &nbsp;&nbsp; Installing R on your computer"
 subtitle: ""
 author: "<br><br><b>Danielle Navarro</b>"
 date: ""
@@ -32,13 +32,13 @@ library(tidyverse)
 library(metathis)
 meta() %>%
   meta_general(
-    description = "An introduction to R markdown",
+    description = "Installing R, RStudio and R packages",
   ) %>% 
   meta_name("github-repo" = "djnavarro/slides") %>% 
   meta_social(
-    title = "An introduction to R markdown",
-    url = "https://slides.djnavarro.net/starting-rmarkdown/",
-    image = "https://slides.djnavarro.net/starting-rmarkdown/img/twitter-image.jpg",
+    title = "Installing R, RStudio and R packages",
+    url = "https://slides.djnavarro.net/installing-r/",
+    image = "https://slides.djnavarro.net/installing-r/img/twitter-image.jpg",
     image_alt = "",
     og_type = "website",
     og_author = "Danielle Navarro",
@@ -89,7 +89,7 @@ class: middle, inverse
 
 class: middle, inverse
 
-background-image: url("img/silhouette.jpg")
+background-image: url("img/rajan-alwan-y8SoSXbOimk-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -97,6 +97,9 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
+<br><br><br>
+<br><br><br>
+<br>
 .larger[.embolden[Installing R]]
 ]
 
@@ -119,7 +122,7 @@ class: middle
 
 class: middle, inverse
 
-background-image: url("img/silhouette.jpg")
+background-image: url("img/brett-jordan-WzzGU9dwMnU-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -149,7 +152,7 @@ class: middle
 
 class: middle, inverse
 
-background-image: url("img/silhouette.jpg")
+background-image: url("img/kelly-sikkema-5R5Trsu1aIM-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -212,7 +215,7 @@ class: middle
 
 class: middle, inverse
 
-background-image: url("img/silhouette.jpg")
+background-image: url("img/hani-bdran-twTS-ZY6MUE-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -220,7 +223,7 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[Extras!]]
+.larger[.embolden[Remotes]]
 ]
 
 
