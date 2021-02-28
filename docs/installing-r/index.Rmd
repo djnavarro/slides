@@ -64,7 +64,7 @@ class: middle, inverse
 ## What are we going to cover?
 
 - Installing R and RStudio
-- Installing and loading package
+- Installing and loading packages
 
 ---
 
@@ -89,7 +89,7 @@ class: middle, inverse
 
 class: middle, inverse
 
-background-image: url("img/rajan-alwan-y8SoSXbOimk-unsplash.jpg")
+background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -122,7 +122,7 @@ class: middle
 
 class: middle, inverse
 
-background-image: url("img/brett-jordan-WzzGU9dwMnU-unsplash.jpg")
+background-image: url("img/bench-accounting-nvzvOPQW0gc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -130,7 +130,7 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[Installing RStudio]]
+.larger[.embolden[RStudio]]
 ]
 
 
@@ -215,7 +215,7 @@ class: middle
 
 class: middle, inverse
 
-background-image: url("img/hani-bdran-twTS-ZY6MUE-unsplash.jpg")
+background-image: url("img/ash-edmonds-LHlC2sl0Zxs-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -223,7 +223,7 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[Remotes]]
+.larger[.embolden[.plainwhite[Remotes]]]
 ]
 
 
@@ -258,4 +258,8 @@ class: middle
 
 class: middle, inverse
 
-## Done!
+background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
+background-size: cover
+
+.hand[... and done! `r emo::ji("heart")`]
+
