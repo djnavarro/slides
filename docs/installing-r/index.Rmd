@@ -89,7 +89,7 @@ class: middle, inverse
 
 class: middle, inverse
 
-background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
+background-image: url("img/james-pond-Z0uzZSM5i4M-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -100,7 +100,7 @@ background-size: cover
 <br><br><br>
 <br><br><br>
 <br>
-.larger[.embolden[Installing R]]
+.larger[.embolden[&nbsp; &nbsp; Install R]]
 ]
 
 
@@ -160,7 +160,7 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[R packages]]
+.larger[.embolden[Packages]]
 ]
 
 ---
