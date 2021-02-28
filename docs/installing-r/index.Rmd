@@ -1,0 +1,112 @@
+---
+title: "> &nbsp;&nbsp; `r emo::ji('book')` `r emo::ji('computer')` <br>> &nbsp;&nbsp; Installing R on your computer"
+subtitle: ""
+author: "<br><br><b>Danielle Navarro</b>"
+date: ""
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["style/xaringan-themer.css", "style/slides-style.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "style/setup.Rmd"}
+```
+
+```{r load-packages, message=FALSE, echo=FALSE}
+library(tidyverse)
+```
+
+
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "An introduction to R markdown",
+  ) %>% 
+  meta_name("github-repo" = "djnavarro/slides") %>% 
+  meta_social(
+    title = "An introduction to R markdown",
+    url = "https://slides.djnavarro.net/starting-rmarkdown/",
+    image = "https://slides.djnavarro.net/starting-rmarkdown/img/twitter-image.jpg",
+    image_alt = "",
+    og_type = "website",
+    og_author = "Danielle Navarro",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@djnavarro"
+  )
+```
+
+
+```{r include=FALSE}
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+
+num_fmt <- scales::number_format(big.mark = ",")
+```
+
+
+class: middle
+
+## What are we going to cover?
+
+- Installing R and RStudio
+- Installing and loading package
+
+---
+
+class: middle
+
+## What is the assumed knowledge?
+
+- This is an introductory unit
+- Very little experience with R is needed
+- Previous experience using RStudio Cloud helps
+
+---
+
+class: middle
+
+## Where can I find the resources?
+
+- These slides: [slides.djnavarro.net/installing=r](https://slides.djnavarro.net/installing-r)
+- YouTube videos: [youtube.djnavarro.net/installing-r](https://youtube.djnavarro.net/installing-r)
+
+---
+
+class: middle, inverse
+
+background-image: url("img/silhouette.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-blue-number[1]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[Installing R]]
+]
+
+
+---
+
+class: middle
+
+```{r, echo=FALSE}
+#knitr::include_graphics("img/word_document_surface.png", dpi = 300)
+```
+
+
