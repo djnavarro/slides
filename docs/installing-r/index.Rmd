@@ -59,7 +59,7 @@ num_fmt <- scales::number_format(big.mark = ",")
 ```
 
 
-class: middle
+class: middle, inverse
 
 ## What are we going to cover?
 
@@ -68,7 +68,7 @@ class: middle
 
 ---
 
-class: middle
+class: middle, inverse
 
 ## What is the assumed knowledge?
 
@@ -78,11 +78,11 @@ class: middle
 
 ---
 
-class: middle
+class: middle, inverse
 
 ## Where can I find the resources?
 
-- These slides: [slides.djnavarro.net/installing=r](https://slides.djnavarro.net/installing-r)
+- These slides: [slides.djnavarro.net/installing-r](https://slides.djnavarro.net/installing-r)
 - YouTube videos: [youtube.djnavarro.net/installing-r](https://youtube.djnavarro.net/installing-r)
 
 ---
@@ -103,10 +103,48 @@ background-size: cover
 
 ---
 
-class: middle
+class: middle, inverse
 
-```{r, echo=FALSE}
-#knitr::include_graphics("img/word_document_surface.png", dpi = 300)
-```
+## https://www.r-project.org/
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/silhouette.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-blue-number[2]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[Installing RStudio]]
+]
+
+
+---
+
+class: middle, inverse
+
+## https://rstudio.com/
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/silhouette.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-blue-number[3]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[R packages]]
+]
 
 
