@@ -208,4 +208,51 @@ class: middle
 
 
 
+---
 
+class: middle, inverse
+
+background-image: url("img/silhouette.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-blue-number[4]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[Extras!]]
+]
+
+
+---
+
+class: middle, inverse
+
+## Using the remotes package
+
+- `install_cran()` installs packages from "CRAN"
+- `install_github()` installs packages from "GitHub"
+
+
+---
+
+class: middle, inverse
+
+## What's the difference
+
+- CRAN: comprehensive R archive network 
+- GitHub: general purpose site for software
+
+
+---
+
+class: middle
+
+.hand[Demonstration]
+
+
+---
+
+class: middle, inverse
+
+## Done!
