@@ -1494,7 +1494,7 @@ ggplot(forensic2) +
 .hand[So now you know the basics. Where to next?]
 
 *Refresher?* ...try this lovely tutorial! <br>
-https://ggplot2tutor.com/beginner_tutorial/beginner_tutorial/
+https://ggplot2tutor.com/viz-pages/beginner_tutorial/beginner_tutorial/
 
 *A classic?* ...look into "R for Data Science" <br>
 https://r4ds.had.co.nz/data-visualisation.html
