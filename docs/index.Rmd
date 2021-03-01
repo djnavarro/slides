@@ -14,3 +14,4 @@ pagetitle: "Slides"
 - [starting-dplyr](./starting-dplyr)
 - [starting-programming](./starting-programming)
 - [starting-functions](./starting-functions)
+- [installing-r](./installing-r)
