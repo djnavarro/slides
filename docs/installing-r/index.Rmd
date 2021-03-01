@@ -32,11 +32,11 @@ library(tidyverse)
 library(metathis)
 meta() %>%
   meta_general(
-    description = "Installing R, RStudio and R packages",
+    description = "Installing R, RStudio, and R packages",
   ) %>% 
   meta_name("github-repo" = "djnavarro/slides") %>% 
   meta_social(
-    title = "Installing R, RStudio and R packages",
+    title = "Installing R, RStudio, and R packages",
     url = "https://slides.djnavarro.net/installing-r/",
     image = "https://slides.djnavarro.net/installing-r/img/twitter-image.png",
     image_alt = "",
