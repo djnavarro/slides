@@ -1,0 +1,122 @@
+---
+title: "> &nbsp;&nbsp; `r emo::ji('computer')` `r emo::ji('package')` <br>> &nbsp;&nbsp; Project structure"
+subtitle: ""
+author: "<br><br><b>Danielle Navarro</b>"
+date: ""
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["style/xaringan-themer.css", "style/slides-style.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "style/setup.Rmd"}
+```
+
+```{r load-packages, message=FALSE, echo=FALSE}
+library(tidyverse)
+```
+
+
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "Project structure",
+  ) %>% 
+  meta_name("github-repo" = "djnavarro/slides") %>% 
+  meta_social(
+    title = "Project structure",
+    url = "https://slides.djnavarro.net/project-structure/",
+    image = "https://slides.djnavarro.net/project_structure/img/twitter-image.png",
+    image_alt = "",
+    og_type = "website",
+    og_author = "Danielle Navarro",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@djnavarro"
+  )
+```
+
+
+```{r include=FALSE}
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+
+num_fmt <- scales::number_format(big.mark = ",")
+```
+
+
+class: middle, inverse
+
+## What are we going to cover?
+
+- Naming files
+- Structured folders
+- README files
+- Templates
+
+---
+
+class: middle, inverse
+
+## What is the assumed knowledge?
+
+- This is an introductory unit
+- Does not contain any programming content
+
+---
+
+class: middle, inverse
+
+## Where can I find the resources?
+
+- These slides: [slides.djnavarro.net/project-structure](https://slides.djnavarro.net/project-structure)
+- YouTube videos: [youtube.djnavarro.net/project-structure](https://youtube.djnavarro.net/project-structure)
+
+---
+
+class: middle, inverse
+
+background-image: url("img/james-pond-Z0uzZSM5i4M-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-blue-number[1]
+]
+.pull-right-wide[
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br>
+.larger[.embolden[&nbsp; &nbsp; Install R]]
+]
+
+---
+
+class: middle
+
+.hand[Demonstration]
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
+background-size: cover
+
+.hand[... and done! `r emo::ji("heart")`]
+
