@@ -20,11 +20,9 @@ set.seed(1234)
 layout: true
   
 <div class="my-footer">
-<!--
 <span>
-<a href="https://robust-tools.djnavarro.net" target="_blank">robust-tools.djnavarro.net</a>
+  <a href="https://slides.djnavarro.net/project-structure" target="_blank">slides.djnavarro.net/project-structure</a>
 </span>
--->
 </div> 
 
 ---
