@@ -409,7 +409,7 @@ background-size: cover
 
 class: middle, inverse
 
-background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-image: url("img/stil-wtqe5nd5MYk-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -425,8 +425,8 @@ background-size: cover
 
 class: middle, inverse
 
-background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
+background-image: url("img/jessica-lee-o5GGlwHfff8-unsplash.jpg")
 background-size: cover
 
-.hand[... and done! `r emo::ji("heart")`]
+.hand-primary[<br><br><br><br>... and we're done! explore and be organised! `r emo::ji("heart")`]
 
