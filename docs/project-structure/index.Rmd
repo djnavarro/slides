@@ -91,15 +91,15 @@ class: middle, inverse
 
 class: middle, inverse
 
-background-image: url("img/james-pond-Z0uzZSM5i4M-unsplash.jpg")
+background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[1]
+  .huge-primary[.plainwhite[1]]
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[.primary[Naming files]]]
+.larger[.embolden[.plainwhite[Naming things]]]
 ]
 
 ---
@@ -120,8 +120,8 @@ class: middle, inverse
 
 class: middle, inverse
 
-background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
+background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
-.hand-primary[... and done! `r emo::ji("heart")`]
+.hand[... and done! `r emo::ji("heart")`]
 
