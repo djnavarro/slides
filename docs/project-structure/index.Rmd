@@ -28,7 +28,6 @@ library(flair)
 ```
 
 
-
 ```{r meta, echo=FALSE}
 library(metathis)
 meta() %>%
@@ -645,8 +644,12 @@ class: inverse
 .hand[A tiny bit of R applied to the project containing these slides...]
 
 .pull-left-wide[
-````{r}
+```{r, eval=FALSE}
 list.files(recursive = TRUE)
+```
+```{r, echo=FALSE}
+(list.files(recursive = TRUE))[1:15]
+cat("...the real output is over 15000 files!")
 ```
 ]
 
