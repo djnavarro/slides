@@ -2,22 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Handlee&display=swap');
 
-/* colors */
-/* From: https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2020-palette-exploration */
-
-:root {
-  --classic-blue: #0F4C81;
-  --provence: #638CC7;
-  --baby-blue: #B6CADA;
-  --baby-blue-30: #B6CADA30;
-  --monument: #7A8387;
-  --stucco: #A58D7F;
-  --peach-quartz: #F5B895;
-  --peach-quartz-30: #F5B89530;
-  --cornhusk: #F4DBB3;
-  --cornhusk-30: #F4DBB330;
-}
-
+/* primary and secondary defined by xaringan-themer */
 
 /* Title slide customization */
 .title-slide h1, h2 {
@@ -36,10 +21,6 @@
 
 .title-slide h2 {
   font-weight: normal;
-}
-
-.title-slide a {
-  color: var(--baby-blue);
 }
 
 .title-slide h3 {
@@ -62,12 +43,17 @@ h1, h2, h3 {
 }
 
 /* Font colors */
-.pink {
-  color: var(--peach-quartz);
-}
 
 .plainwhite {
   color: #FFFFFF;
+}
+
+.primary{
+  color: var(--primary);
+}
+
+.secondary{
+  color: var(--secondary);
 }
 
 /* Bold */
@@ -86,17 +72,18 @@ h1, h2, h3 {
 
 /* Custom fonts */
 
-.huge-blue-number {
+.huge-primary {
  font-family: 'Montserrat', sans-serif;
  font-size: 1700%;
  font-weight: bold;
- color: var(--provence);
+ color: var(--primary);
 }
-.huge-pink-number {
+
+.huge-secondary {
  font-family: 'Montserrat', sans-serif;
  font-size: 1700%;
  font-weight: bold;
- color: var(--peach-quartz);
+ color: var(--secondary);
 }
 
 /* Handwriting */
@@ -104,11 +91,17 @@ h1, h2, h3 {
   font-family: 'Gochi Hand', cursive;
   font-size: 125%;
 }
-.hand-blue{
+.hand-primary{
   font-family: 'Gochi Hand', cursive;
-  color: var(--provence);
+  color: var(--primary);
   font-size: 125%;
 }
+.hand-secondary{
+  font-family: 'Gochi Hand', cursive;
+  color: var(--secondary);
+  font-size: 125%;
+}
+
 
 /*Alternative two-column layouts*/
 
@@ -178,52 +171,13 @@ h1, h2, h3 {
 
 .remark-slide-number .progress-bar {
   height: 100%;
-  background-color: var(--classic-blue);
+  background-color: "black";
 }
 
 /* Square bullets for lists */
 
 ul{
   list-style-type: square;
-}
-
-
-/* Custom boxes */
-.discussion, .your-turn, .alert {
-  padding: 5px 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.discussion{
-  border-left: solid 5px var(--baby-blue);
-  background-color: var(--baby-blue-30);
-}
-.discussion:before{
-  content: "Discussion";
-  font-size: 150%;
-  font-weight: bold;
-  color: var(--monument);
-  margin-bottom: 10px;
-}
-.your-turn {
-  border-left: solid 5px var(--cornhusk);
-  background-color: var(--cornhusk-30);
-}
-.your-turn:before{
-  content: "Your turn!";
-  font-size: 150%;
-  font-weight: bold;
-  color: var(--stucco);
-  margin-bottom: 10px;
-}
-.alert {
-  border-right: solid 5px var(--peach-quartz);
-  background-color: var(--peach-quartz-30);
-}
-
-/* Code highlighting */
-.remark-code-line-highlighted {
-  background-color: var(--peach-quartz)
 }
 
 /* Footer */

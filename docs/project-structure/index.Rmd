@@ -1,5 +1,5 @@
 ---
-title: "> &nbsp;&nbsp; `r emo::ji('computer')` `r emo::ji('package')` <br>> &nbsp;&nbsp; Project structure"
+title: "> &nbsp;&nbsp; `r emo::ji('building_construction')` <br>> &nbsp;&nbsp; Project structure"
 subtitle: ""
 author: "<br><br><b>Danielle Navarro</b>"
 date: ""
@@ -64,7 +64,8 @@ class: middle, inverse
 ## What are we going to cover?
 
 - Naming files
-- Structured folders
+- File paths
+- Folder structure
 - README files
 - Templates
 
@@ -94,21 +95,25 @@ background-image: url("img/james-pond-Z0uzZSM5i4M-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-blue-number[1]
+  .huge-primary[1]
 ]
 .pull-right-wide[
 <br><br><br>
-<br><br><br>
-<br><br><br>
-<br>
-.larger[.embolden[&nbsp; &nbsp; Install R]]
+.larger[.embolden[.primary[Naming files]]]
 ]
 
 ---
 
-class: middle
+class: middle, inverse
 
-.hand[Demonstration]
+
+.hand[Acknowledgment]
+
+- "Everything I know is from Jenny Bryan"
+- This section is based on her slides
+- https://speakerdeck.com/jennybc/how-to-name-files
+
+
 
 
 ---
@@ -118,5 +123,5 @@ class: middle, inverse
 background-image: url("img/fredy-jacob-t0SlmanfFcg-unsplash.jpg")
 background-size: cover
 
-.hand[... and done! `r emo::ji("heart")`]
+.hand-primary[... and done! `r emo::ji("heart")`]
 
