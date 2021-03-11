@@ -376,7 +376,7 @@ background-size: cover
 ---
 
 
-.hand[These names don't sort in chronological order `r emo::ji("sob")`]
+.hand[File names sometimes need to include dates<br>... but these dates don't sort in chronological order `r emo::ji("sob")`]
 
 - `1-April-2012.R`
 - `1-Jan-2009.R`
@@ -387,7 +387,7 @@ background-size: cover
 
 ---
 
-.hand[But these names do! `r emo::ji("tada")`]
+.hand[Happily, these dates do! `r emo::ji("tada")`]
 
 - `2009-01-01.R`
 - `2009-12-01.R`
@@ -401,8 +401,106 @@ background-size: cover
 
 .hand[Key principle with dates...]
 
-- Dates should be YYYY-MM-DD format
+- Dates should follow the `YYYY-MM-DD` format
 - Known as the ISO 8601 standard
+
+
+---
+
+class: inverse
+
+.hand[Place dates before slugs to preserve chronology...]
+
+```{r filenames2, include=FALSE, results='hide'}
+"2009-01-01_original-analysis.R"
+"2009-12-01_minor-changes-to-original.R"
+"2012-01-01_analysis-at-2-year-follow-up.R"
+"2012-01-02_minor-changes-to-follow-up.R"
+"2012-04-01_combined-original-and-follow-up.R"
+```
+
+```{r, echo=FALSE, results='asis'}
+decorate_chunk("filenames2") %>% 
+  flair_rx('"[^_\n]+') %>% 
+  flair::knit_print.with_flair()
+```
+
+
+---
+
+class: inverse
+
+.hand[... and the slugs will tell a story!]
+
+
+```{r, echo=FALSE, results='asis'}
+decorate_chunk("filenames2") %>% 
+  flair_rx("_[^.]*") %>% 
+  flair::knit_print.with_flair()
+```
+
+
+---
+
+
+.hand[Use numbers as a prefix to order files]
+
+- `01_preface.docx`
+- `02_introduction.docx`
+- `03_method.docx`
+- etc...
+
+
+- `19_appendix-09.docx`
+- `20-appendix-10.docx`
+- `21-appendix-11.docx`
+
+
+--
+
+
+- Left pad with `0` so that all numbers have same length
+- Numbers are more robust than letters (alphabetical order varies)
+
+
+---
+
+.hand[Include keywords...]
+
+- `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- `reading01_shakespeare_romeo-and-juliet_act03.docx`
+- `reading02_shakespeare_othello.docx`
+- `reading19_plath_the-bell-jar.docx`
+- `notes02_shakespeare_othello.docx`
+- `notes19_plath_the-bell-jar.docx`
+
+
+--
+
+.hand[... to let computer find files]
+
+- <code>reading19_<b>plath</b>_the-bell-jar.docx</code>
+- <code>notes19_<b>plath</b>_the-bell-jar.docx</code>
+
+
+---
+
+.hand[Include keywords...]
+
+- `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- `reading01_shakespeare_romeo-and-juliet_act03.docx`
+- `reading02_shakespeare_othello.docx`
+- `reading19_plath_the-bell-jar.docx`
+- `notes02_shakespeare_othello.docx`
+- `notes19_plath_the-bell-jar.docx`
+
+
+.hand[... to let computer find files]
+
+- <code><b>notes</b>02_shakespeare_othello.docx</code>
+- <code><b>notes</b>19_plath_the-bell-jar.docx</code>
 
 
 

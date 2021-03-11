@@ -362,7 +362,7 @@ background-size: cover
 ---
 
 
-.hand[These names don't sort in chronological order 😭]
+.hand[File names sometimes need to include dates&lt;br&gt;... but these dates don't sort in chronological order 😭]
 
 - `1-April-2012.R`
 - `1-Jan-2009.R`
@@ -373,7 +373,7 @@ background-size: cover
 
 ---
 
-.hand[But these names do! 🎉]
+.hand[Happily, these dates do! 🎉]
 
 - `2009-01-01.R`
 - `2009-12-01.R`
@@ -387,8 +387,94 @@ background-size: cover
 
 .hand[Key principle with dates...]
 
-- Dates should be YYYY-MM-DD format
+- Dates should follow the `YYYY-MM-DD` format
 - Known as the ISO 8601 standard
+
+
+---
+
+class: inverse
+
+.hand[Place dates before slugs to preserve chronology...]
+
+
+
+
+&lt;code class ='r hljs remark-code'&gt;&lt;span style='background-color:#ffff7f'&gt;"2009-01-01&lt;/span&gt;_original-analysis.R"&lt;br&gt;&lt;span style='background-color:#ffff7f'&gt;"2009-12-01&lt;/span&gt;_minor-changes-to-original.R"&lt;br&gt;&lt;span style='background-color:#ffff7f'&gt;"2012-01-01&lt;/span&gt;_analysis-at-2-year-follow-up.R"&lt;br&gt;&lt;span style='background-color:#ffff7f'&gt;"2012-01-02&lt;/span&gt;_minor-changes-to-follow-up.R"&lt;br&gt;&lt;span style='background-color:#ffff7f'&gt;"2012-04-01&lt;/span&gt;_combined-original-and-follow-up.R"&lt;/code&gt;
+
+
+---
+
+class: inverse
+
+.hand[... and the slugs will tell a story!]
+
+
+
+&lt;code class ='r hljs remark-code'&gt;"2009-01-01&lt;span style='background-color:#ffff7f'&gt;_original-analysis&lt;/span&gt;.R"&lt;br&gt;"2009-12-01&lt;span style='background-color:#ffff7f'&gt;_minor-changes-to-original&lt;/span&gt;.R"&lt;br&gt;"2012-01-01&lt;span style='background-color:#ffff7f'&gt;_analysis-at-2-year-follow-up&lt;/span&gt;.R"&lt;br&gt;"2012-01-02&lt;span style='background-color:#ffff7f'&gt;_minor-changes-to-follow-up&lt;/span&gt;.R"&lt;br&gt;"2012-04-01&lt;span style='background-color:#ffff7f'&gt;_combined-original-and-follow-up&lt;/span&gt;.R"&lt;/code&gt;
+
+
+---
+
+
+.hand[Use numbers as a prefix to order files]
+
+- `01_preface.docx`
+- `02_introduction.docx`
+- `03_method.docx`
+- etc...
+
+
+- `19_appendix-09.docx`
+- `20-appendix-10.docx`
+- `21-appendix-11.docx`
+
+
+--
+
+
+- Left pad with `0` so that all numbers have same length
+- Numbers are more robust than letters (alphabetical order varies)
+
+
+---
+
+.hand[Include keywords...]
+
+- `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- `reading01_shakespeare_romeo-and-juliet_act03.docx`
+- `reading02_shakespeare_othello.docx`
+- `reading19_plath_the-bell-jar.docx`
+- `notes02_shakespeare_othello.docx`
+- `notes19_plath_the-bell-jar.docx`
+
+
+--
+
+.hand[... to let computer find files]
+
+- &lt;code&gt;reading19_&lt;b&gt;plath&lt;/b&gt;_the-bell-jar.docx&lt;/code&gt;
+- &lt;code&gt;notes19_&lt;b&gt;plath&lt;/b&gt;_the-bell-jar.docx&lt;/code&gt;
+
+
+---
+
+.hand[Include keywords...]
+
+- `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- `reading01_shakespeare_romeo-and-juliet_act03.docx`
+- `reading02_shakespeare_othello.docx`
+- `reading19_plath_the-bell-jar.docx`
+- `notes02_shakespeare_othello.docx`
+- `notes19_plath_the-bell-jar.docx`
+
+
+.hand[... to let computer find files]
+
+- &lt;code&gt;&lt;b&gt;notes&lt;/b&gt;02_shakespeare_othello.docx&lt;/code&gt;
+- &lt;code&gt;&lt;b&gt;notes&lt;/b&gt;19_plath_the-bell-jar.docx&lt;/code&gt;
 
 
 
