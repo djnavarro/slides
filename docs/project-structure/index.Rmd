@@ -39,7 +39,7 @@ meta() %>%
   meta_social(
     title = "Project structure",
     url = "https://slides.djnavarro.net/project-structure/",
-    image = "https://slides.djnavarro.net/project_structure/img/twitter-image.png",
+    image = "https://slides.djnavarro.net/project-structure/img/twitter-image.png",
     image_alt = "",
     og_type = "website",
     og_author = "Danielle Navarro",
@@ -71,7 +71,6 @@ class: middle, inverse
 
 - Naming files
 - Project structure
-- Templates
 
 ---
 
@@ -80,7 +79,7 @@ class: middle, inverse
 ## What is the assumed knowledge?
 
 - This is an introductory unit
-- Does not contain any programming content
+- Contains almost no programming content at all
 
 ---
 
@@ -527,7 +526,7 @@ class: middle, inverse
 .hand[Three more principles to be kind to yourself]
 
 - Understand file paths
-- Structure your folders
+- Use project templates
 - Use README files
 
 
@@ -547,6 +546,127 @@ background-size: cover
 .larger[.embolden[.secondary[File paths]]]
 ]
 
+---
+
+class: inverse
+
+.hand[Files inside folders: an aging metaphor!]
+
+```{r, echo=FALSE, out.width=700}
+knitr::include_graphics("img/wesley-tingey-snNHKZ-mGfE-unsplash.jpg")
+```
+
+---
+
+class: inverse
+
+.hand[Three files inside one folder]
+
+- `r emo::ji("folder")` <code>.plainwhite[project]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[01_initial-plan.docx]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[02_data-collection.R]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[03_initial-analysis.R]</code>
+
+--
+
+<br>
+
+.hand[The "file paths" are written like this...]
+
+- <code>.plainwhite[project<b>/</b>01_initial-plan.docx]</code>
+- <code>.plainwhite[project<b>/</b>02_data-collection.R]</code>
+- <code>.plainwhite[project<b>/</b>03_initial-analysis.R]</code>
+
+
+
+---
+
+class: inverse
+
+.hand[Three files inside one folder]
+
+- `r emo::ji("folder")` <code>.plainwhite[project]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[01_initial-plan.docx]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[02_data-collection.R]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[03_initial-analysis.R]</code>
+
+
+<br>
+
+.hand[Except on Windows... `r emo::ji("person_facepalming")`]
+
+- <code>.plainwhite[project<b>\\</b>01_initial-plan.docx]</code>
+- <code>.plainwhite[project<b>\\</b>02_data-collection.R]</code>
+- <code>.plainwhite[project<b>\\</b>03_initial-analysis.R]</code>
+
+
+---
+
+class: inverse
+
+.hand[Folders inside folders creates a "file tree"...]
+
+
+- `r emo::ji("folder")` <code>.plainwhite[project]</code>
+  - `r emo::ji("page_facing_up")` <code>.plainwhite[overview.docx]</code>
+  - `r emo::ji("folder")` <code>.plainwhite[data]</code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">data_ex01.csv</span></code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">data_ex02.csv</span></code>
+  - `r emo::ji("folder")` <code>.plainwhite[analysis]</code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">ex01_01_descriptive_statistics.R</span></code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">ex01_02_inferential_statistics.R</span></code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">ex02_01_descriptive_statistics.R</span></code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">ex02_02_inferential_statistics.R</span></code>
+  - `r emo::ji("folder")` <code>.plainwhite[report]</code>
+      - `r emo::ji("page_facing_up")` <code><span style="color:white">2021-03-11_report_getting-started.docx</span></code>
+
+
+
+---
+
+class: inverse
+
+.hand[Paths for all files in this tree]
+
+- <code>.plainwhite[project/overview.docx]</code>
+- <code><span style="color:white">project/data/data_ex01.csv</span></code>
+- <code><span style="color:white">project/data/data_ex02.csv</span></code>
+- <code><span style="color:white">project/analysis/ex01_01_descriptive_statistics.R</span></code>
+- <code><span style="color:white">project/analysis/ex01_02_inferential_statistics.R</span></code>
+- <code><span style="color:white">project/analysis/ex02_01_descriptive_statistics.R</span></code>
+- <code><span style="color:white">project/analysis/ex02_02_inferential_statistics.R</span></code>
+- <code><span style="color:white">project/report/2021-03-11_report_getting-started.docx</span></code>
+
+
+---
+
+class: inverse
+
+.hand[A tiny bit of R applied to the project containing these slides...]
+
+.pull-left-wide[
+````{r}
+list.files(recursive = TRUE)
+```
+]
+
+---
+
+class: inverse
+
+.hand[...to find the image credits by searching for a keyword!]
+
+.pull-left-wide[
+````{r}
+list.files(pattern = "unsplash", recursive = TRUE)
+```
+]
+
+--
+
+.pull-left-wide[
+`r emo::ji("heart")` `r emo::ji("heart")` `r emo::ji("heart")`
+]
 
 ---
 
@@ -560,29 +680,26 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[.secondary[Folder structure]]]
+.larger[.embolden[.secondary[Templating]]]
 ]
-
-
 
 ---
 
-class: middle, inverse
+class: inverse
 
-background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
-background-size: cover
+.hand[Templates are "blank" projects]
 
-.pull-left-narrow[
-  .huge-secondary[`r section()`]
-]
-.pull-right-wide[
-<br><br><br>
-.larger[.embolden[.secondary[README]]]
-]
+- Folder structure already exists
+- Starter files already included
+- Instructions are already included
 
+--
 
+.hand[Allows you to "start clean"]
 
-
+- Make a copy of the template
+- Rename files as needed
+- Start work!
 
 
 ---
@@ -597,9 +714,40 @@ background-size: cover
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[.secondary[Templating]]]
+.larger[.embolden[.secondary[README]]]
 ]
 
+
+---
+
+class: inverse
+
+
+.hand[Wait... instructions already included?]
+
+- Most folders should have a <code>.plainwhite[README.txt]</code> or <code>.plainwhite[README.md]</code> file
+- Simple text file explaining what's in the folder and what it's for
+
+
+--
+
+
+- In the finished project the README files help your users navigate
+- In your project template the README files contain instructions to you!
+
+---
+
+class: middle
+
+.hand[Okay, let's design a project template ourselves!]
+
+---
+
+class: middle, inverse
+
+## Link to the example template
+
+https://slides.djnavarro.net/project-structure/example-template.zip
 
 ---
 
