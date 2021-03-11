@@ -115,6 +115,211 @@ class: middle, inverse
 - https://speakerdeck.com/jennybc/how-to-name-files
 
 
+---
+
+class: middle
+
+.hand[
+’Tis but thy name that is my enemy;&lt;br&gt;
+Thou art thyself, though not a Montague.&lt;br&gt;
+What’s Montague? It is nor hand, nor foot,&lt;br&gt;
+Nor arm, nor face, nor any other part&lt;br&gt;
+Belonging to a man. O, be some other name!&lt;br&gt;
+What’s in a name? That which we call a rose&lt;br&gt;
+By any other name would smell as sweet;&lt;br&gt;
+So Romeo would, were he not Romeo call’d,&lt;br&gt;
+Retain that dear perfection which he owes&lt;br&gt;
+Without that title. Romeo, doff thy name;&lt;br&gt;
+And for thy name, which is no part of thee,&lt;br&gt;
+Take all myself.
+]
+
+---
+
+class: middle, inverse
+
+.hand[This isn't true for file names!]
+
+
+---
+
+.hand[Some file names are good]
+
+- `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- `reading01_shakespeare_romeo-and-juliet_act03.docx`
+- `reading02_shakespeare_othello.docx`
+- `reading19_plath_the-bell-jar.docx`
+
+--
+
+.hand[Other file names are baaaaaad]
+
+- `Romeo and Juliet Act 1.docx`
+- `Romeo and juliet act 2.docx`
+- `Shakespeare RJ act3.docx`
+- `shakespeare othello I think?.docx`
+- `belljar plath (1).docx`
+
+
+---
+
+class: middle, inverse
+
+.hand[Three principles to be kind to yourself]
+
+- Be nice to machines
+- Be nice to humans
+- Make sorting and searching easy
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-primary[.plainwhite[2]]
+]
+.pull-right-wide[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.larger[.embolden[.plainwhite[Names machines like]]]
+]
+
+
+---
+
+.hand[Don't leave white space]
+
+- Machines sometimes get confused by spaces
+- Easier to write code when files don't have spaces
+
+
+--
+
+
+- ✅ `romeo-and-juliet_act01.docx`
+- ✅ `midsummer-nights-dream.docx`
+
+
+- ❌ `romeo and juliet act 1.docx`
+- ❌ `midsummer nights dream.docx`
+
+
+
+---
+
+
+
+.hand[Use letters, numbers, hyphens and underscores... that's it]
+
+- Machines sometimes get confused by special characters
+- Some characters have special meaning, e.g., `^.*?+|$`
+- If you can, avoid accents `ñ` (but consider accessibility!)
+
+
+--
+
+
+- ✅ `what-the-cat.docx`
+- ✅ `essay_romeo-and-juliet_draft01.docx`
+
+
+- ❌ `what-the-cat?.docx`
+- ❌ `essay "romeo and juliet" draft01.docx`
+- ❌ `essay "romeo and juliet" draft01(1).docx`
+
+
+
+
+---
+
+.hand[Don't assume case is meaningful]
+
+- Some operating systems treat `a` and `A` the same
+- Some operating systems treat `a` and `A` differently
+- Never have two files that differ only in case
+- Be consistent
+
+
+--
+
+
+- ✅ `othello.docx`
+- ✅ `romeo-and-juliet.docx`
+
+
+- ❌ `othello.docx`
+- ❌ `Othello.docx`
+- ❌ `Romeo-and-juliet.docx`
+
+
+
+
+---
+
+.hand[Use separator characters wisely]
+
+- Use hyphen `-` to mean "different words that are part of the same chunk"
+- Use underscore `_` to separate different chunks
+
+--
+
+
+- Chunk: [identifier] `reading01`, `reading02`, etc
+- Chunk: [author] `shakespeare`, `plath`, etc
+- Chunk: [title] `othello`, `the-bell-jar`, etc
+- Chunk: [section] `act01`, `act02`, etc
+
+
+--
+
+
+- Order: [identifier] [author] [title] [section(optional)]
+- ✅ `reading01_shakespeare_romeo-and-juliet_act01.docx`
+- ✅ `reading01_shakespeare_romeo-and-juliet_act02.docx`
+- ✅ `reading02_shakespeare_othello.docx`
+- ✅ `reading19_plath_the-bell-jar.docx`
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-primary[.plainwhite[2]]
+]
+.pull-right-wide[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.larger[.embolden[.plainwhite[Names humans like]]]
+]
+
+
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-primary[.plainwhite[3]]
+]
+.pull-right-wide[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+.larger[.embolden[.plainwhite[Easy sort and search]]]
+]
+
+
 
 
 ---
