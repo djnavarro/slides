@@ -24,6 +24,7 @@ output:
 
 ```{r load-packages, message=FALSE, echo=FALSE}
 library(tidyverse)
+library(flair)
 ```
 
 
@@ -304,6 +305,56 @@ background-size: cover
 
 
 
+---
+
+
+.hand[It's 3am and the project is due... do you want these files?]
+
+- `01.R`
+- `02.R`
+- `notes.txt`
+- `2b.R`
+- `notes.docx`
+
+--
+
+.hand[or these?]
+
+- `analysis01_descriptive-statistics.R`
+- `analysis02_preregistered-analysis.R`
+- `notes01_realising-the-problem.txt`
+- `analysis03_departing-from-the-plan.R`
+- `notes02_tentative-write-up.docx`
+
+
+
+---
+
+class: inverse
+
+.hand[Love the slug `r emo::ji("snail")`]
+
+```{r filenames, include=FALSE, results='hide'}
+"analysis01_descriptive-statistics.R"
+"analysis02_preregistered-analysis.R"
+"notes01_realising-the-problem.txt"
+"analysis03_departing-from-the-plan.R"
+"notes02_tentative-write-up.docx"
+```
+
+```{r, echo=FALSE, results='asis'}
+decorate_chunk("filenames") %>% 
+  flair_rx("_[^.]*") %>% 
+  flair::knit_print.with_flair()
+```
+
+
+--
+
+
+- Concise, meaningful description
+- Usually appended to the end
+
 
 
 ---
@@ -321,6 +372,37 @@ background-size: cover
 .larger[.embolden[.plainwhite[Easy sort and search]]]
 ]
 
+
+---
+
+
+.hand[These names don't sort in chronological order `r emo::ji("sob")`]
+
+- `1-April-2012.R`
+- `1-Jan-2009.R`
+- `1-Jan-2012.R`
+- `12-Jan-2012.R`
+- `2-Jan-2012.R`
+- `31-Dec-2009.R`
+
+---
+
+.hand[But these names do! `r emo::ji("tada")`]
+
+- `2009-01-01.R`
+- `2009-12-01.R`
+- `2012-01-01.R`
+- `2012-01-02.R`
+- `2012-04-01.R`
+
+
+--
+
+
+.hand[Key principle with dates...]
+
+- Dates should be YYYY-MM-DD format
+- Known as the ISO 8601 standard
 
 
 
