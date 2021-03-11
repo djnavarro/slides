@@ -56,6 +56,11 @@ knitr::knit_hooks$set(source = function(x, options) {
 })
 
 num_fmt <- scales::number_format(big.mark = ",")
+sec_num <- 0
+section <- function() {
+  sec_num <<- sec_num + 1
+  sec_num
+}
 ```
 
 
@@ -93,7 +98,7 @@ background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[.plainwhite[1]]
+  .huge-primary[.plainwhite[`r section()`]]
 ]
 .pull-right-wide[
 <br><br><br>
@@ -178,7 +183,7 @@ background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[.plainwhite[2]]
+  .huge-primary[.plainwhite[`r section()`]]
 ]
 .pull-right-wide[
 <br><br><br>
@@ -290,7 +295,7 @@ background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[.plainwhite[2]]
+  .huge-primary[.plainwhite[`r section()`]]
 ]
 .pull-right-wide[
 <br><br><br>
@@ -309,7 +314,7 @@ background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[.plainwhite[3]]
+  .huge-primary[.plainwhite[`r section()`]]
 ]
 .pull-right-wide[
 <br><br><br>
@@ -323,15 +328,15 @@ background-size: cover
 
 class: middle, inverse
 
-background-image: url("img/free-to-use-sounds-xbHgspX4_nc-unsplash.jpg")
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
-  .huge-primary[.plainwhite[4]]
+  .huge-secondary[`r section()`]
 ]
 .pull-right-wide[
 <br><br><br>
-.larger[.embolden[.plainwhite[Project structure]]]
+.larger[.embolden[.secondary[Project structure]]]
 ]
 
 
@@ -345,10 +350,75 @@ class: middle, inverse
 - Structure your folders
 - Use README files
 
+
+
 ---
 
+class: middle, inverse
 
-Create from templates
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-secondary[`r section()`]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[.secondary[File paths]]]
+]
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-secondary[`r section()`]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[.secondary[Folder structure]]]
+]
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-secondary[`r section()`]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[.secondary[README]]]
+]
+
+
+
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-secondary[`r section()`]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[.secondary[Templating]]]
+]
 
 
 ---

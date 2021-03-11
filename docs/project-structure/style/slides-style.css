@@ -74,14 +74,14 @@ h1, h2, h3 {
 
 .huge-primary {
  font-family: 'Montserrat', sans-serif;
- font-size: 1700%;
+ font-size: 1500%;
  font-weight: bold;
  color: var(--primary);
 }
 
 .huge-secondary {
  font-family: 'Montserrat', sans-serif;
- font-size: 1700%;
+ font-size: 1500%;
  font-weight: bold;
  color: var(--secondary);
 }
