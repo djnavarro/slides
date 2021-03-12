@@ -845,6 +845,96 @@ class: inverse
 
 ---
 
+
+class: inverse
+
+.hand[Time travel... why?]
+
+
+.pull-left[
+```{r, echo=FALSE}
+knitr::include_graphics("https://media.giphy.com/media/efU9WbFkGP9NAkLOWn/giphy.gif")
+```
+]
+--
+.pull-right[
+- You've made a huge mistake and need to revert
+- You want to check the order you did things
+]
+
+
+
+---
+
+
+class: inverse
+
+.hand[Three ways to get yourself a TARDIS]
+
+
+.pull-left[
+```{r, echo=FALSE}
+knitr::include_graphics("https://media.giphy.com/media/efU9WbFkGP9NAkLOWn/giphy.gif")
+```
+]
+.pull-right[
+- Special app (e.g., Time Machine)
+- Employer backup to server
+- Version control with git/GitHub
+]
+
+
+---
+
+class: inverse
+
+.hand[Everyone organises differently, here's mine... `r emo::ji("snowflake")`]
+
+
+.pull-left[
+- `r emo::ji("open_file_folder")` <code>.plainwhite[danielle]</code>
+  - `r emo::ji("file_folder")` <code>.plainwhite[Dropbox]</code>
+  - `r emo::ji("file_folder")` <code>.plainwhite[GitHub]</code>
+]
+
+--
+
+.pull-right[
+- My workflow is different for GitHub versus Dropbox
+- So I keep these two separated from the start
+]
+
+---
+
+class: inverse
+
+.hand[Everyone organises differently, here's mine... `r emo::ji("snowflake")`]
+
+.pull-left[
+- `r emo::ji("open_file_folder")` <code><span style="color:white">danielle</span></code>
+  - `r emo::ji("open_file_folder")` <code><span style="color:white">Dropbox</span></code>
+      - `r emo::ji("open_file_folder")` <code><span style="color:white">Work</span></code>
+          - `r emo::ji("file_folder")` <code><span style="color:white">administration</span></code>
+          - `r emo::ji("file_folder")` <code><span style="color:white">archives</span></code>
+          - `r emo::ji("file_folder")` <code><span style="color:white">cheatsheets</span></code>
+          - `r emo::ji("file_folder")` <code><span style="color:white">projects</span></code>
+          - `r emo::ji("file_folder")` <code><span style="color:white">teaching</span></code>
+  - `r emo::ji("file_folder")` <code><span style="color:white">GitHub</span></code>
+]
+
+--
+
+
+.pull-right[
+- Note the archives folder! 
+- Completed  content is not deleted
+- It is zipped and moved to archives
+- My archives go back to 1998
+- Yes I am old `r emo::ji("sob")`
+]
+
+---
+
 class: middle, inverse
 
 background-image: url("img/jessica-lee-o5GGlwHfff8-unsplash.jpg")
