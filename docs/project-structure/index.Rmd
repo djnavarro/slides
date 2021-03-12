@@ -748,11 +748,15 @@ class: middle
 
 class: middle, inverse
 
-## Link to the example template
+## The example template we just made
 
 https://slides.djnavarro.net/project-structure/example-template.zip
 
+<br>
 
+## A more realistic template I use sometimes
+
+https://github.com/djnavarro/newproject/
 
 
 
