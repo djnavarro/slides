@@ -752,6 +752,97 @@ class: middle, inverse
 
 https://slides.djnavarro.net/project-structure/example-template.zip
 
+
+
+
+
+---
+
+class: middle, inverse
+
+background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-size: cover
+
+.pull-left-narrow[
+  .huge-secondary[`r section()`]
+]
+.pull-right-wide[
+<br><br><br>
+.larger[.embolden[.secondary[Where do projects live?]]]
+]
+
+---
+
+class: inverse
+
+.hand[Let's go back to file paths for a moment]
+
+- Every user has a "home" folder
+  - On windows it might be <code>.plainwhite[C:\Users\danielle]</code>
+  - On a mac it might be <code>.plainwhite[/Users/danielle]</code>
+  - On ubuntu it might be <code>.plainwhite[/home/danielle]</code>
+
+--
+
+<br>
+
+- User files and folders are inside the user folder
+  - The Desktop is usually <code>.plainwhite[danielle/Desktop]</code>
+  - The Downloads folder is usually <code>.plainwhite[danielle/Downloads]</code>
+  - If you use Dropbox it is usually <code>.plainwhite[danielle/Dropbox]</code>
+
+---
+
+class: inverse
+
+.hand[There are good places `r emo::ji("check")` and bad places `r emo::ji("x")`]
+
+.pull-left[
+```{r, echo=FALSE}
+knitr::include_graphics("https://media.giphy.com/media/l3mZliqXpqkVkkQYE/giphy.gif")
+```
+]
+
+
+---
+
+class: inverse
+
+.hand[There are good places `r emo::ji("check")` and bad places `r emo::ji("x")`]
+
+.pull-left[
+```{r, echo=FALSE}
+knitr::include_graphics("https://media.giphy.com/media/3o6fIX5mC1mSgNU0BW/giphy.gif")
+```
+]
+.pull-right[
+- `r emo::ji("x")` The Desktop
+- `r emo::ji("x")` The Downloads folder
+- `r emo::ji("x")` Stored with non-projects
+- `r emo::ji("x")` Places that aren't backed up
+]
+
+
+
+---
+
+class: inverse
+
+.hand[Cloud services often make good places `r emo::ji("check")`]
+
+- `r emo::ji("check")` <code>.plainwhite[C:\Users\danielle\OneDrive\projects]</code>
+- `r emo::ji("check")` <code>.plainwhite[/Users/danielle/Dropbox/projects]</code>
+- `r emo::ji("check")` <code>.plainwhite[/home/danielle/Dropbox/projects]</code>
+
+--
+
+<br>
+
+- `r emo::ji("memo")` this is a folder on your computer that is automatically synchronised
+- `r emo::ji("check")` Dropbox/OneDrive/etc app ensures your files are the same everywhere
+- `r emo::ji("check")` the service is designed to be user friendly
+- `r emo::ji("x")` you don't get to go "back in time" very far
+
 ---
 
 class: middle, inverse
