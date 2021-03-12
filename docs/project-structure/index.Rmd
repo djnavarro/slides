@@ -760,7 +760,7 @@ https://slides.djnavarro.net/project-structure/example-template.zip
 
 class: middle, inverse
 
-background-image: url("img/manuel-santolaria-ls2vGs4sLCU-unsplash.jpg")
+background-image: url("img/vu-anh-ThyBKNya1yY-unsplash.jpg")
 background-size: cover
 
 .pull-left-narrow[
@@ -932,6 +932,66 @@ class: inverse
 - My archives go back to 1998
 - Yes I am old `r emo::ji("sob")`
 ]
+
+
+---
+
+
+class: inverse
+
+.hand[Everyone organises differently, here's mine... `r emo::ji("snowflake")`]
+
+.pull-left[
+- `r emo::ji("open_file_folder")` <code><span style="color:white">danielle</span></code>
+  - `r emo::ji("file_folder")` <code><span style="color:white">Dropbox</span></code>
+  - `r emo::ji("open_file_folder")` <code><span style="color:white">GitHub</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">archive</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">artwork</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">other</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">projects</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">sites</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">slides</span></code>
+      - `r emo::ji("file_folder")` <code><span style="color:white">teaching</span></code>
+]
+
+--
+
+
+.pull-right[
+- Similar organisation, not the same
+- Yours might be different too!
+- Key principle: *think* about it `r emo::ji("thinking")` 
+]
+
+
+---
+
+class: inverse
+
+.hand[Something to think about...]
+
+- A project should not "care" where it lives
+- Suppose my project folder is <code><span style="color:white">floof</span></code>
+- It currently lives at <code><span style="color:white">/home/danielle/Dropbox/floof</span></code>
+
+
+--
+
+<br>
+.hand[Will everything still work if...]
+
+- ... I move it to  <code><span style="color:white">/home/danielle/GitHub/floof</span></code>?
+- ... I copy it onto a different computer?
+- ... the new computer runs a different operating system?
+
+
+--
+
+
+<br>
+.hand[... Let's leave that question until later!]
+
+
 
 ---
 
