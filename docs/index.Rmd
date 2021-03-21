@@ -5,7 +5,6 @@ output:
     self_contained: no
     theme: darkly
     highlight: textmate
-    css: mystyle.css
 pagetitle: "Slides"
 ---
 
