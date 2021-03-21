@@ -2,7 +2,8 @@
 title: '<div class="jumbotron"><h1 class="title toc-ignore display-3" align="center">Slides</h1><p class="lead" align="center">Danielle Navarro</p></div>'
 output:
   html_document:
-    theme: cosmo
+    self_contained: no
+    theme: darkly
     highlight: textmate
     css: mystyle.css
 pagetitle: "Slides"
@@ -11,8 +12,8 @@ pagetitle: "Slides"
 ```{r, echo=FALSE}
 bootstrap_card <- function(title, image, caption, link, link_text, alt_text = "") {
   paste(
-    '<div class="col-sm-3">',
-    '<div class="card" style="width: 18rem;">',
+    '<div class="col-sm-4">',
+    '<div class="card">',
     paste0('<a href="', link, '"><img class="card-img-top" src="', image, '" alt="', alt_text, '"></a>'),
     '<div class="card-body">',
     paste0('<h5 class="card-title">', title, '</h5>'),
