@@ -10,15 +10,21 @@ pagetitle: "Slides"
 ---
 
 ```{r, echo=FALSE}
-bootstrap_card <- function(title, image, caption, link, link_text, alt_text = "") {
+bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
+  
+  image <- paste0("./index_img/", slug, ".png")
+  slide_link <- paste0("./", slug)
+  video_link <- paste0("https://youtube.djnavarro.net/", slug)
+  
   paste(
     '<div class="col-sm-4">',
-    '<div class="card">',
-    paste0('<a href="', link, '"><img class="card-img-top" src="', image, '" alt="', alt_text, '"></a>'),
+    '<div class="card border border-secondary">',
+    paste0('<a href="', slide_link, '"><img class="card-img-top" src="', image, '" alt="', alt_text, '"></a>'),
     '<div class="card-body">',
     paste0('<h5 class="card-title">', title, '</h5>'),
     paste0('<p class="card-text">', caption, '</p>'),
-    paste0('<a href="', link, '" class="btn btn-primary">', link_text, '</a>'),
+    paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
+    paste0('<a href="', video_link, '" class="btn btn-primary">youtube</a>'),
     '</div>',
     '</div>',
     '</div>',
@@ -34,75 +40,51 @@ cat('<div class="card-group">')
 # R markdown
 cat(bootstrap_card(
   title = "Starting R Markdown", 
-  image = "./starting-rmarkdown/img/twitter-image.jpg", 
-  caption = "",
-  link = "./starting-rmarkdown",
-  link_text = "Slides"
+  slug = "starting-rmarkdown"
 ))
 
 # ggplot2
 cat(bootstrap_card(
   title = "Starting ggplot2", 
-  image = "./starting-ggplot2/img/forensic.png", 
-  caption = "",
-  link = "./starting-ggplot2",
-  link_text = "Slides"
+  slug = "starting-ggplot2"
 ))
 
 # readr
 cat(bootstrap_card(
   title = "Starting readr", 
-  image = "./starting-readr/img/pipe.png", 
-  caption = "",
-  link = "./starting-readr",
-  link_text = "Slides"
+  slug = "starting-readr"
 ))
 
 # dplyr
 cat(bootstrap_card(
   title = "Starting dplyr", 
-  image = "./starting-dplyr/img/filter_slide.png", 
-  caption = "",
-  link = "./starting-dplyr",
-  link_text = "Slides"
+  slug = "starting-dplyr"
 ))
 
 # programming of art
 cat(bootstrap_card(
   title = "Starting programming", 
-  image = "./starting-programming/img/scrawl_15-10000-400-100-5.png", 
-  caption = "",
-  link = "./starting-programming",
-  link_text = "Slides"
+  slug = "starting-programming"
 ))
 
 # functional programming
 cat(bootstrap_card(
   title = "Starting functions", 
-  image = "./starting-functions/img/flametree3.png", 
-  caption = "",
-  link = "./starting-functions",
-  link_text = "Slides"
+  slug = "starting-functions"
 ))
 
 
 # installing R
 cat(bootstrap_card(
   title = "Installing R", 
-  image = "./installing-r/img/twitter-image.png", 
-  caption = "",
-  link = "./installing-r",
-  link_text = "Slides"
+  slug = "installing-r"
 ))
 
 
 # installing R
 cat(bootstrap_card(
   title = "Project structure", 
-  image = "./project-structure/img/twitter-image.png", 
-  caption = "",
-  link = "./project-structure",
-  link_text = "Slides"
+  slug = "project-structure"
 ))
 
 
