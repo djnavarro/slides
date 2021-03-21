@@ -48,11 +48,6 @@ h1 {
   text-align: right;
 }
 
-.title-slide {
-  background-image: url(../img/silhouette.jpg);
-  background-size: cover;
-}
-
 /* Alignment */
 .right{
   text-align: right;
