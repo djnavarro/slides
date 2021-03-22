@@ -23,7 +23,7 @@ header <- paste(
 
 splash <- paste(
   '<div class="jumbotron">',
-  '<h1 class="title" align="center">Slides</h1>',
+  '<h2 class="title" align="center">Slides</h2>',
   '<p class="lead" align="center">Danielle Navarro</p>',
   '</div>'
 )
@@ -40,7 +40,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
     '<div class="card">',
     paste0('<a href="', slide_link, '"><img class="card-img-top" width="100%" src="', image, '" alt="', alt_text, '"></a>'),
     '<div class="card-body">',
-    paste0('<h5 class="card-title">', title, '</h5>'),
+    paste0('<h4 class="card-title">', title, '</h4>'),
     paste0('<p class="card-text">', caption, '</p>'),
     paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
     paste0('<a href="', video_link, '" class="btn btn-primary">youtube</a>'),
@@ -61,51 +61,59 @@ cards <- c(
 
   # R markdown
   bootstrap_card(
-    title = "Starting R Markdown",
-    slug = "starting-rmarkdown"
+    title = "Starting R markdown",
+    slug = "starting-rmarkdown",
+    caption = "An introduction to R markdown. The target audience is a novice R user with no previous experience with markdown. Covers the basics of markdown, and illustrates the structure of an R markdown document, including the YAML header. Briefly describes LaTeX equations."
   ),
 
   # ggplot2
   bootstrap_card(
     title = "Starting ggplot2",
-    slug = "starting-ggplot2"
+    slug = "starting-ggplot2",
+    caption = "An introduction to ggplot2. The target audience is a novice user with no previous experience with R or ggplot2. Does not cover the entire grammar, but helps the user reach the point at which they can make quality data visualisations."
   ),
 
   # readr
   bootstrap_card(
     title = "Starting readr",
-    slug = "starting-readr"
+    slug = "starting-readr",
+    caption = "Discusses how to read and write CSV files using the readr package. It is assumed the audience has a little experience with R, but not much. Also introduces the magrittr pipe and the dplyr workflow for group_by() and summarise()"
   ),
 
   # dplyr
   bootstrap_card(
     title = "Starting dplyr",
-    slug = "starting-dplyr"
+    slug = "starting-dplyr",
+    caption = "An introduction to data wrangling with dplyr. Covers filter(), select(), mutate() and arrange() primarily, but also discusses joins and the pivot_longer() and pivot_wider() functions from tidyr."
   ),
 
   # programming of art
   bootstrap_card(
     title = "Starting programming",
-    slug = "starting-programming"
+    slug = "starting-programming",
+    caption = "This is primarily a tutorial on making generative art in R, but in doing so introduces core programming constructs and data structures. It is assumed the user has some previous experience with ggplot2."
   ),
 
   # functional programming
   bootstrap_card(
     title = "Starting functions",
-    slug = "starting-functions"
+    slug = "starting-functions",
+    caption = "This is also an art tutorial that introduces key programming concepts, and follows naturally from the 'starting programming' slides. It shows how to write functions and exposes the user to some of the purrr functionality."
   ),
 
 
   # installing R
   bootstrap_card(
     title = "Installing R",
-    slug = "installing-r"
+    slug = "installing-r",
+    caption = "A walkthrough showing how to install R and RStudio, with examples for Mac, Windows and Ubuntu. The target audience is a novice with a little R experience (e.g., via RStudio Cloud) who now wants to run R locally."
   ),
 
   # project structure
   bootstrap_card(
     title = "Project structure",
-    slug = "project-structure"
+    slug = "project-structure",
+    caption = "Inspired by Jenny Bryan's 'Naming Things' slide deck, these slides discuss how to name files, introduces file paths, and discusses the basics of project organisation and management."
   ),
 
   "</div>",
