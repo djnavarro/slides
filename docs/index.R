@@ -79,7 +79,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
 
 cards <- c(
 
-  '<div class="container">',
+  '<div class="container" width="100%>',
   '<div class="row p-5 m-5">',
   '<div class="card-group">',
 
