@@ -61,7 +61,7 @@ splash <- paste(
   ' '
 )
 
-bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
+bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "slides")) {
 
   image <- paste0("./index_img/", slug, ".png")
   slide_link <- paste0("./", slug)
