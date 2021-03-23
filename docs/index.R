@@ -1,4 +1,11 @@
 
+# path defined relative to git root, not rproj root
+# (ensures script works no matter which sub-project
+# is open)
+git_root <- rprojroot::find_root(".git/HEAD")
+html_path <- fs::path(git_root, "docs", "index.html")
+
+# set up header
 header <- paste(
   '<!DOCTYPE html>',
   '<html>',
@@ -51,7 +58,7 @@ header <- paste(
   sep = "\n"
 )
 
-
+# splash banner
 splash <- paste(
   ' ',
   '<div class="jumbotron text-white bg-dark">',
@@ -61,6 +68,7 @@ splash <- paste(
   ' '
 )
 
+# define a bootstrap card
 bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "slides")) {
 
   image <- paste0("./index_img/", slug, ".png")
@@ -98,6 +106,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
   )
 }
 
+# define the card group
 cards <- c(
 
   '<div class="container">',
@@ -167,13 +176,12 @@ cards <- c(
   "<br><br>"
 )
 
-
-
+# close document
 footer <- paste(
   '</body>',
   '</html>'
 )
 
+# write document
 doc <- c(header, splash, cards, footer)
-
-brio::write_lines(doc, "~/GitHub/slides/docs/index.html") # <- badness here!
+brio::write_lines(doc, html_path)
