@@ -81,6 +81,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
     ' ',
     '<div class="col-12 col-md-6 d-flex align-items-stretch">',
     '<div class="card text-white bg-dark mb-3 p-3">',
+    paste0('<a name="', slug, '"></a>'),
     ' ',
 
     # insert image, title, and caption into the card body
