@@ -5,7 +5,7 @@ header <- paste(
   ' ',
   '<head>',
   ' ',
-  
+
   # meta tags
   '<meta charset="utf-8" />',
   '<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />',
@@ -30,21 +30,21 @@ header <- paste(
   '<meta property="og:locale" content="en_US"/>',
   '<meta property="article:author" content="Danielle Navarro"/>',
   ' ',
-  
+
   # title
   '<title>Slides</title>',
   ' ',
-  
+
   # add bootstrap 4.6
   '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">',
   '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>',
   '<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>',
   ' ',
 
-  # set page background  
+  # set page background
   '<style>body{background:#292b2c;}</style>',
   ' ',
-  
+
   '</head>',
   ' ',
   '<body>',
@@ -68,13 +68,13 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
   video_link <- paste0("https://youtube.djnavarro.net/", slug)
 
   paste(
-    
+
     # setup card
     ' ',
     '<div class="col-12 col-md-6 d-flex align-items-stretch">',
     '<div class="card text-white bg-dark mb-3 p-3">',
     ' ',
-    
+
     # insert image, title, and caption into the card body
     paste0('<a href="', slide_link, '"><img class="card-img-top p-0 m-0" src="', image, '" alt="', alt_text, '"></a>'),
     '<div class="card-body">',
@@ -82,7 +82,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
     paste0('<p class="card-text">', caption, '</p>'),
     '</div>',
     ' ',
-    
+
     # insert links into the card footer
     '<div class="card-footer">',
     paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
@@ -100,8 +100,8 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
 
 cards <- c(
 
-  '<div class="container" width="100%>',
-  '<div class="row p-5 m-5">',
+  '<div class="container">',
+  '<div class="row">',
   '<div class="card-group">',
 
   # R markdown
@@ -176,4 +176,4 @@ footer <- paste(
 
 doc <- c(header, splash, cards, footer)
 
-brio::write_lines(doc, "~/GitHub/slides/docs/index.html") # <- badness here! 
+brio::write_lines(doc, "~/GitHub/slides/docs/index.html") # <- badness here!
