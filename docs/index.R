@@ -2,32 +2,32 @@
 header <- paste(
   '<!DOCTYPE html>',
   '<html>',
-  '',
+  ' ',
   '<head>',
-  '',
+  ' ',
   
   # meta tags
   '<meta charset="utf-8" />',
   '<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />',
   '<meta name="viewport" content="width=device-width, initial-scale=1" />',
-  '',
+  ' ',
   
   # title
   '<title>Slides</title>',
-  '',
+  ' ',
   
   # add bootstrap 4.6
   '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">',
   '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>',
   '<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>',
-  '',
+  ' ',
 
   # set page background  
   '<style>body{background:#292b2c;}</style>',
-  '',
+  ' ',
   
   '</head>',
-  '',
+  ' ',
   '<body>',
   sep = "\n"
 )
@@ -49,10 +49,10 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
   paste(
     
     # setup card
-    '',
+    ' ',
     '<div class="col-12 col-md-6">',
     '<div class="card text-white bg-dark mb-3 p-3">',
-    '',
+    ' ',
     
     # insert image, title, and caption into the card body
     paste0('<a href="', slide_link, '"><img class="card-img-top p-0 m-0" src="', image, '" alt="', alt_text, '"></a>'),
@@ -60,14 +60,14 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
     paste0('<h4 class="card-title">', title, '</h4>'),
     paste0('<p class="card-text">', caption, '</p>'),
     '</div>',
-    '',
+    ' ',
     
     # insert links into the card footer
     '<div class="card-footer">',
     paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
     paste0('<a href="', video_link, '" class="btn btn-primary">youtube</a>'),
     '</div>',
-    '',
+    ' ',
 
     # close card
     '</div>',
