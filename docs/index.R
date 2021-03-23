@@ -50,7 +50,7 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
     
     # setup card
     ' ',
-    '<div class="col-12 col-md-6">',
+    '<div class="col-12 col-md-6 d-flex align-items-stretch">',
     '<div class="card text-white bg-dark mb-3 p-3">',
     ' ',
     
