@@ -4,16 +4,28 @@ header <- paste(
   '<html>',
   '',
   '<head>',
+  '',
+  
+  # meta tags
   '<meta charset="utf-8" />',
   '<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />',
-  '<title>Slides</title>',
-  '<script src="index_files/jquery-1.11.3/jquery.min.js"></script>',
   '<meta name="viewport" content="width=device-width, initial-scale=1" />',
-  '<link href="index_files/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />',
-  '<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>',
-  '<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>',
-  '<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>',
-  '<script src="index_files/navigation-1.1/tabsets.js"></script>',
+  '',
+  
+  # title
+  '<title>Slides</title>',
+  '',
+  
+  # add bootstrap 4.6
+  '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">',
+  '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>',
+  '<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>',
+  '',
+
+  # set page background  
+  '<style>body{background:#292b2c;}</style>',
+  '',
+  
   '</head>',
   '',
   '<body>',
@@ -22,7 +34,7 @@ header <- paste(
 
 
 splash <- paste(
-  '<div class="jumbotron">',
+  '<div class="jumbotron text-white bg-dark">',
   '<h2 class="title" align="center">Slides</h2>',
   '<p class="lead" align="center">Danielle Navarro</p>',
   '</div>'
@@ -35,18 +47,29 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
   video_link <- paste0("https://youtube.djnavarro.net/", slug)
 
   paste(
-    ' ',
-    '<div class="col-sm-3 p-5 m-5">',
-    '<div class="card">',
-    paste0('<a href="', slide_link, '"><img class="card-img-top" width="100%" src="', image, '" alt="', alt_text, '"></a>'),
+    
+    # setup card
+    '',
+    '<div class="col-12 col-md-6">',
+    '<div class="card text-white bg-dark mb-3 p-3">',
+    '',
+    
+    # insert image, title, and caption into the card body
+    paste0('<a href="', slide_link, '"><img class="card-img-top p-0 m-0" src="', image, '" alt="', alt_text, '"></a>'),
     '<div class="card-body">',
     paste0('<h4 class="card-title">', title, '</h4>'),
     paste0('<p class="card-text">', caption, '</p>'),
+    '</div>',
+    '',
+    
+    # insert links into the card footer
+    '<div class="card-footer">',
     paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
     paste0('<a href="', video_link, '" class="btn btn-primary">youtube</a>'),
-    '<p>&nbsp;</p>',
-    '<p>&nbsp;</p>',
     '</div>',
+    '',
+
+    # close card
     '</div>',
     '</div>',
     ' ',
@@ -56,7 +79,8 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
 
 cards <- c(
 
-  '<div class="container-fluid">',
+  '<div class="container">',
+  '<div class="row p-5 m-5">',
   '<div class="card-group">',
 
   # R markdown
@@ -116,6 +140,7 @@ cards <- c(
     caption = "Inspired by Jenny Bryan's 'Naming Things' slide deck, these slides discuss how to name files, introduces file paths, and discusses the basics of project organisation and management."
   ),
 
+  "</div>",
   "</div>",
   "</div>",
   "<br><br>"
