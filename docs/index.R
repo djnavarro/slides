@@ -53,10 +53,12 @@ header <- paste(
 
 
 splash <- paste(
+  ' ',
   '<div class="jumbotron text-white bg-dark">',
   '<h2 class="title" align="center">Slides</h2>',
   '<p class="lead" align="center">Danielle Navarro</p>',
-  '</div>'
+  '</div>',
+  ' '
 )
 
 bootstrap_card <- function(title, slug, caption = "", alt_text = "") {
@@ -174,4 +176,4 @@ footer <- paste(
 
 doc <- c(header, splash, cards, footer)
 
-brio::write_lines(doc, "~/GitHub/slides/docs/index.html")
+brio::write_lines(doc, "~/GitHub/slides/docs/index.html") # <- badness here! 
