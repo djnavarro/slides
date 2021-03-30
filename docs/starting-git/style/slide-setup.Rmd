@@ -1,0 +1,75 @@
+```{r setup, include=FALSE}
+# (this .Rmd file is automatically included at the beginning of the slides)
+
+# R options
+options(htmltools.dir.version = FALSE)
+
+# figure height, width, dpi
+knitr::opts_chunk$set(echo = TRUE, fig.width = 5, fig.height = 3, dpi = 300)
+
+# fontawesome
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+
+# magick
+dev.off <- function(){
+  invisible(grDevices::dev.off())
+}
+
+# hook source
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+
+# number format
+num_fmt <- scales::number_format(big.mark = ",")
+
+
+# define the section function
+sec_num <- 0
+section <- function() {
+  sec_num <<- sec_num + 1
+  sec_num
+}
+
+# define the shade function
+shade <- function(x, col) {
+  paste0("<span style='color: ", col, "'>", x, "</span>")
+}
+
+# define the create_section function
+create_section <- function(title = " ", shade = NULL, image = NULL, lines = 2) {
+  
+  msg <- ""
+  
+  if(!is.null(image)) {
+    msg <- c(msg, paste0('<!-- background-image: url("', image, '") -->'))
+    msg <- c(msg, '<!-- background-size: cover -->')
+  }
+  
+  msg <- c(msg, '.pull-left-narrow[')
+  msg <- c(msg, paste0('  .huge-primary[', shade(section(), shade), ']'))
+  msg <- c(msg, ']')  
+  
+  msg <- c(msg, '.pull-right-wide[')
+  msg <- c(msg, '  ', paste0(rep("<br>", lines), collapse = ""))
+  msg <- c(msg, paste0('  <div class = "larger embolden primary">', shade(title, shade), '</div>'))
+  msg <- c(msg, ']')  
+  
+  return(msg)
+}
+
+# set seed
+set.seed(1234)
+```
+
+layout: true
+  
+<div class="my-footer">
+<span>
+  <a href="https://slides.djnavarro.net" target="_blank">slides.djnavarro.net</a>
+</span>
+</div> 
+
+---
