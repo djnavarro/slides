@@ -5,6 +5,8 @@ author: "<br><br><b>Danielle Navarro</b>"
 date: ""
 output:
   xaringan::moon_reader:
+    includes:
+      in_header: header.html
     lib_dir: libs
     css: ["style/xaringan-themer.css", "style/slides-style.css"]
     nature:
