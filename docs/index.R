@@ -37,7 +37,11 @@ header <- paste(
   '<meta property="og:locale" content="en_US"/>',
   '<meta property="article:author" content="Danielle Navarro"/>',
   ' ',
-
+  
+  # plausible analytics
+  '<script async defer data-domain="slides.djnavarro.net" src="https://plausible.io/js/plausible.js"></script>',
+  ' ',
+  
   # title
   '<title>Slides</title>',
   ' ',
