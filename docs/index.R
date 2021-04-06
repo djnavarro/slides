@@ -77,8 +77,9 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
 
   image <- paste0("./index_img/", slug, ".png")
   slide_link <- paste0("./", slug)
-  video_link <- paste0("https://youtube.djnavarro.net/", slug)
-
+  youtube_link <- paste0("https://youtube.djnavarro.net/", slug)
+  bilibili_link <- paste0("https://bilibili.djnavarro.net/", slug)
+  
   paste(
 
     # setup card
@@ -99,7 +100,8 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
     # insert links into the card footer
     '<div class="card-footer">',
     paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
-    paste0('<a href="', video_link, '" class="btn btn-primary">youtube</a>'),
+    paste0('<a href="', youtube_link, '" class="btn btn-primary">youtube</a>'),
+    paste0('<a href="', bilibili_link, '" class="btn btn-primary">bilibili</a>'),
     '</div>',
     ' ',
 
