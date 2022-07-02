@@ -66,8 +66,8 @@ header <- paste(
 splash <- paste(
   ' ',
   '<div class="jumbotron text-white bg-dark">',
-  '<h2 class="title" align="center">Slides</h2>',
-  '<p class="lead" align="center">Danielle Navarro</p>',
+  '<h2 class="title" align="center">Slide decks by Danielle Navarro</h2>',
+  '<p class="lead" align="center">Try not to get too excited, okay?</p>',
   '</div>',
   ' '
 )
