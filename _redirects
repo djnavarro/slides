@@ -1,0 +1,10 @@
+# Redirects from what the browser requests to what netlify serves
+/starting-rmarkdown https://djnavarro.net/slides-starting-rmarkdown
+/starting-ggplot2 https://djnavarro.net/slides-starting-ggplot
+/starting-ggplot https://djnavarro.net/slides-starting-ggplot
+/starting-readr https://djnavarro.net/slides-starting-readr
+/starting-dplyr https://djnavarro.net/slides-starting-dplyr
+/starting-programming https://djnavarro.net/slides-starting-programming
+/starting-functions https://djnavarro.net/slides-starting-functions
+/installing-r https://djnavarro.net/slides-installing-r
+/project-structure https://djnavarro.net/slides-project-structure
