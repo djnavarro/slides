@@ -3,7 +3,7 @@
 # (ensures script works no matter which sub-project
 # is open)
 git_root <- rprojroot::find_root(".git/HEAD")
-html_path <- fs::path(git_root, "docs", "index.html")
+html_path <- fs::path(git_root, "index.html")
 
 # set up header
 header <- paste(
@@ -37,11 +37,11 @@ header <- paste(
   '<meta property="og:locale" content="en_US"/>',
   '<meta property="article:author" content="Danielle Navarro"/>',
   ' ',
-  
+
   # plausible analytics
   '<script async defer data-domain="slides.djnavarro.net" src="https://plausible.io/js/plausible.js"></script>',
   ' ',
-  
+
   # title
   '<title>Slides</title>',
   ' ',
@@ -73,13 +73,17 @@ splash <- paste(
 )
 
 # define a bootstrap card
-bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "slides")) {
+bootstrap_card <- function(title, slug, caption = "",
+                           alt_text = paste(title, "slides"),
+                           slide_link = paste0("./", slug),
+                           video_link = paste0("https://youtube.djnavarro.net/", slug),
+                           repo_link = paste0("https://github.com/djnavarro/slides-", slug),
+                           site_link = NULL
+                           ) {
 
   image <- paste0("./index_img/", slug, ".png")
-  slide_link <- paste0("./", slug)
-  youtube_link <- paste0("https://youtube.djnavarro.net/", slug)
-  bilibili_link <- paste0("https://bilibili.djnavarro.net/", slug)
-  
+  #bilibili_link <- paste0("https://bilibili.djnavarro.net/", slug)
+
   paste(
 
     # setup card
@@ -99,9 +103,10 @@ bootstrap_card <- function(title, slug, caption = "", alt_text = paste(title, "s
 
     # insert links into the card footer
     '<div class="card-footer">',
-    paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
-    paste0('<a href="', youtube_link, '" class="btn btn-primary">youtube</a>'),
-    paste0('<a href="', bilibili_link, '" class="btn btn-primary">bilibili</a>'),
+    if(!is.null(slide_link)) paste0('<a href="', slide_link, '" class="btn btn-primary">slides</a>'),
+    if(!is.null(video_link)) paste0('<a href="', video_link, '" class="btn btn-primary">recording</a>'),
+    if(!is.null(repo_link)) paste0('<a href="', repo_link, '" class="btn btn-primary">repository</a>'),
+    if(!is.null(site_link)) paste0('<a href="', site_link, '" class="btn btn-primary">site</a>'),
     '</div>',
     ' ',
 
@@ -120,6 +125,44 @@ cards <- c(
   '<div class="row">',
   '<div class="card-group">',
 
+  # project structure
+  bootstrap_card(
+    title = "Larger-than-memory workflows with Apache Arrow",
+    slug = "arrow-user-2022",
+    caption = "A workshop presented to the useR!2022 conference",
+    video_link = NULL,
+    repo_link = "https://github.com/djnavarro/arrow-user2022",
+    site_link = "https://arrow-user2022.netlify.app"
+  ),
+
+  # project structure
+  bootstrap_card(
+    title = "Introduction to Arrow for R users",
+    slug = "data-thread-2022",
+    caption = "A talk given as part of The Data Thread 2022, the inaugural conference of the Apache Arrow community"
+  ),
+
+  # project structure
+  bootstrap_card(
+    title = "Project structure",
+    slug = "project-structure",
+    caption = "Inspired by Jenny Bryan's 'Naming Things' slide deck, these slides discuss how to name files, introduces file paths, and discusses the basics of project organisation and management."
+  ),
+
+  # programming of art
+  bootstrap_card(
+    title = "Starting programming",
+    slug = "starting-programming",
+    caption = "This is primarily a tutorial on making generative art in R, but in doing so introduces core programming constructs and data structures. It is assumed the user has some previous experience with ggplot2."
+  ),
+
+  # functional programming
+  bootstrap_card(
+    title = "Starting functions",
+    slug = "starting-functions",
+    caption = "This is also an art tutorial that introduces key programming concepts, and follows naturally from the 'starting programming' slides. It shows how to write functions and exposes the user to some of the purrr functionality."
+  ),
+
   # R markdown
   bootstrap_card(
     title = "Starting R markdown",
@@ -129,8 +172,8 @@ cards <- c(
 
   # ggplot2
   bootstrap_card(
-    title = "Starting ggplot2",
-    slug = "starting-ggplot2",
+    title = "Starting ggplot",
+    slug = "starting-ggplot",
     caption = "An introduction to ggplot2. The target audience is a novice user with no previous experience with R or ggplot2. Does not cover the entire grammar, but helps the user reach the point at which they can make quality data visualisations."
   ),
 
@@ -148,33 +191,11 @@ cards <- c(
     caption = "An introduction to data wrangling with dplyr. Covers filter(), select(), mutate() and arrange() primarily, but also discusses joins and the pivot_longer() and pivot_wider() functions from tidyr."
   ),
 
-  # programming of art
-  bootstrap_card(
-    title = "Starting programming",
-    slug = "starting-programming",
-    caption = "This is primarily a tutorial on making generative art in R, but in doing so introduces core programming constructs and data structures. It is assumed the user has some previous experience with ggplot2."
-  ),
-
-  # functional programming
-  bootstrap_card(
-    title = "Starting functions",
-    slug = "starting-functions",
-    caption = "This is also an art tutorial that introduces key programming concepts, and follows naturally from the 'starting programming' slides. It shows how to write functions and exposes the user to some of the purrr functionality."
-  ),
-
-
   # installing R
   bootstrap_card(
     title = "Installing R",
     slug = "installing-r",
     caption = "A walkthrough showing how to install R and RStudio, with examples for Mac, Windows and Ubuntu. The target audience is a novice with a little R experience (e.g., via RStudio Cloud) who now wants to run R locally."
-  ),
-
-  # project structure
-  bootstrap_card(
-    title = "Project structure",
-    slug = "project-structure",
-    caption = "Inspired by Jenny Bryan's 'Naming Things' slide deck, these slides discuss how to name files, introduces file paths, and discusses the basics of project organisation and management."
   ),
 
   "</div>",
