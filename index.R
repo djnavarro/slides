@@ -65,10 +65,11 @@ header <- paste(
 # splash banner
 splash <- paste(
   ' ',
-  '<div class="jumbotron text-white bg-dark">',
-  '<h2 class="title" align="center">Slide decks by Danielle Navarro</h2>',
-  '<p class="lead" align="center">Try not to get too excited, okay?</p>',
+  '<div class="jumbotron text-white bg-dark" style="background-image: url(\'index_img/banner.png\'); padding-top: 10%; padding-bottom: 10%; background-size: cover">',
+  '<h1 class="title" align="center" style="font-size:300%"><b>djnavarro :: slides</b></h1>',
+  '<p align="center" style="font-size:120%">slide decks by <a style="color:#ffffff; text-decoration: underline" href="https://djnavarro.net">danielle navarro</a></p>',
   '</div>',
+  '<br>',
   ' '
 )
 
