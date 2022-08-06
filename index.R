@@ -126,6 +126,16 @@ cards <- c(
   '<div class="row">',
   '<div class="card-group">',
 
+  # art-from-code
+  bootstrap_card(
+    title = "Making Art from Code",
+    slug = "art-from-code",
+    caption = "A workshop presented at rstudio::conf(2022)",
+    video_link = NULL,
+    repo_link = "https://github.com/rstudio-conf-2022/art-from-code",
+    site_link = "https://art-from-code.netlify.app"
+  ),
+
   # project structure
   bootstrap_card(
     title = "Larger-than-memory workflows with Apache Arrow",
