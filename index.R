@@ -126,6 +126,15 @@ cards <- c(
   '<div class="row">',
   '<div class="card-group">',
 
+  # latin-r
+  bootstrap_card(
+    title = "A tour of the Apache Arrow ecosystem for the R community",
+    slug = "arrow-latinr-2022",
+    caption = "Invited talk given for Latin-R 2022",
+    video_link = NULL
+  ),
+
+
   # art-from-code
   bootstrap_card(
     title = "Making Art from Code",
