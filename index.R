@@ -131,7 +131,7 @@ cards <- c(
     title = "A tour of the Apache Arrow ecosystem for the R community",
     slug = "arrow-latinr-2022",
     caption = "Invited talk given for Latin-R 2022",
-    video_link = NULL
+    video_link = "https://youtu.be/s1ONP_s8ASg?t=227"
   ),
 
 
