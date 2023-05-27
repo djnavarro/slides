@@ -1,0 +1,192 @@
+---
+page-layout: full
+---
+
+::: {.banner}
+
+::: {.centered}
+# Slide decks by Danielle Navarro
+:::
+
+:::
+
+```{r}
+#| echo: false
+add_card <- function(src, title, text, url, link_text) {
+  lines <- c(
+    '<div class="g-col-12 g-col-md-4">',
+    '<div class="card h-100">',
+    paste0('<a href="', url, '"><img src="', src, '" class="card-img-top"></a>'),
+    '<div class="card-body">',
+    paste0('<h3 class="card-title">', title, '</h3>'),
+    paste0('<p class="card-text">', text, '</p>'),
+    paste0('<a href="', url, '" class="btn btn-primary">', link_text, '</a>'),
+    '</div>',
+    '</div>',
+    '</div>'
+  )
+  cat(lines, sep="\n")
+}
+
+
+bootstrap_card <- function(title, 
+                           slug, 
+                           caption = "",
+                           alt_text = paste(title, "slides"),
+                           slide_link = paste0("./", slug),
+                           video_link = paste0("https://youtube.djnavarro.net/", slug),
+                           repo_link = paste0("https://github.com/djnavarro/slides-", slug),
+                           site_link = NULL
+) {
+  
+  image <- paste0("./index_img/", slug, ".png")
+  
+  lines <- c(
+    
+    # setup card
+    '<div class="g-col-12 g-col-md-4">',
+    '<div class="card h-100">',
+
+    # insert image, title, and caption into the card body
+    paste0(
+      '<a href="', 
+      slide_link, 
+      '"><img class="card-img-top p-0 m-0" src="', 
+      image, 
+      '" alt="',
+      alt_text, 
+      '"></a>'
+    ),
+    '<div class="card-body">',
+    paste0('<h3 class="card-title">', title, '</h3>'),
+    paste0('<p class="card-text">', caption, '</p>'),
+    '</div>',
+    ' ',
+    
+    # insert links into the card footer
+    '<div class="card-footer">',
+    if(!is.null(slide_link)) paste0('<a href="', 
+                                    slide_link, 
+                                    '" class="btn btn-primary">slides</a>'),
+    if(!is.null(video_link)) paste0('<a href="', 
+                                    video_link, 
+                                    '" class="btn btn-primary">recording</a>'),
+    if(!is.null(repo_link)) paste0('<a href="', 
+                                   repo_link, 
+                                   '" class="btn btn-primary">repository</a>'),
+    if(!is.null(site_link)) paste0('<a href="', 
+                                   site_link, 
+                                   '" class="btn btn-primary">site</a>'),
+    '</div>',
+    ' ',
+    
+    # close card
+    '</div>',
+    '</div>',
+    ' '
+  )
+  cat(lines, sep="\n")
+}
+```
+
+
+::: {.grid}
+
+```{r}
+#| echo: false
+#| results: asis
+
+# latin-r
+bootstrap_card(
+  title = "A tour of the Apache Arrow ecosystem for the R community",
+  slug = "arrow-latinr-2022",
+  caption = "Invited talk given for Latin-R 2022",
+  video_link = "https://youtu.be/s1ONP_s8ASg?t=227"
+)
+
+# art-from-code
+bootstrap_card(
+  title = "Making art from code",
+  slug = "art-from-code",
+  caption = "A workshop presented at rstudio::conf(2022)",
+  video_link = NULL,
+  repo_link = "https://github.com/rstudio-conf-2022/art-from-code",
+  site_link = "https://art-from-code.netlify.app"
+)
+
+# project structure
+bootstrap_card(
+  title = "Larger-than-memory workflows with Apache Arrow",
+  slug = "arrow-user-2022",
+  caption = "A workshop presented to the useR!2022 conference",
+  video_link = NULL,
+  repo_link = "https://github.com/djnavarro/arrow-user2022",
+  site_link = "https://arrow-user2022.netlify.app"
+)
+
+# project structure
+bootstrap_card(
+  title = "Introduction to Arrow for R users",
+  slug = "data-thread-2022",
+  caption = "A talk given as part of The Data Thread 2022, the inaugural conference of the Apache Arrow community"
+)
+
+# project structure
+bootstrap_card(
+  title = "Project structure",
+  slug = "project-structure",
+  caption = "Inspired by Jenny Bryan's 'Naming Things' slide deck, these slides discuss how to name files, introduces file paths, and discusses the basics of project organisation and management."
+)
+
+# programming of art
+bootstrap_card(
+  title = "Starting programming",
+  slug = "starting-programming",
+  caption = "This is primarily a tutorial on making generative art in R, but in doing so introduces core programming constructs and data structures. It is assumed the user has some previous experience with ggplot2."
+)
+
+# functional programming
+bootstrap_card(
+  title = "Starting functions",
+  slug = "starting-functions",
+  caption = "This is also an art tutorial that introduces key programming concepts, and follows naturally from the 'starting programming' slides. It shows how to write functions and exposes the user to some of the purrr functionality."
+)
+
+# R markdown
+bootstrap_card(
+  title = "Starting R markdown",
+  slug = "starting-rmarkdown",
+  caption = "An introduction to R markdown. The target audience is a novice R user with no previous experience with markdown. Covers the basics of markdown, and illustrates the structure of an R markdown document, including the YAML header. Briefly describes LaTeX equations."
+)
+
+# ggplot2
+bootstrap_card(
+  title = "Starting ggplot",
+  slug = "starting-ggplot",
+  caption = "An introduction to ggplot2. The target audience is a novice user with no previous experience with R or ggplot2. Does not cover the entire grammar, but helps the user reach the point at which they can make quality data visualisations."
+)
+
+# readr
+bootstrap_card(
+  title = "Starting readr",
+  slug = "starting-readr",
+  caption = "Discusses how to read and write CSV files using the readr package. It is assumed the audience has a little experience with R, but not much. Also introduces the magrittr pipe and the dplyr workflow for group_by() and summarise()"
+)
+
+# dplyr
+bootstrap_card(
+  title = "Starting dplyr",
+  slug = "starting-dplyr",
+  caption = "An introduction to data wrangling with dplyr. Covers filter(), select(), mutate() and arrange() primarily, but also discusses joins and the pivot_longer() and pivot_wider() functions from tidyr."
+)
+
+# installing R
+bootstrap_card(
+  title = "Installing R",
+  slug = "installing-r",
+  caption = "A walkthrough showing how to install R and RStudio, with examples for Mac, Windows and Ubuntu. The target audience is a novice with a little R experience (e.g., via RStudio Cloud) who now wants to run R locally."
+)
+```
+
+:::
+

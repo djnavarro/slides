@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "Danielle Navarro"
+  site-url: https://djnavarro.net
+  repo-url: https://github.com/djnavarro/djnavarro.github.io
+  open-graph: true
+  twitter-card:
+    creator: "@djnavarro"
+    card-style: summary_large_image
+  navbar:
+    title: false
+    background: "#eee"
+    right:
+      - text: Danielle Navarro
+        menu:
+        - href: https://djnavarro.net
+          text: Homepage
+        - href: https://blog.djnavarro.net
+          text: Data science blog
+        - href: https://art.djnavarro.net
+          text: Generative art
+        - href: https://papers.djnavarro.net
+          text: Academic papers
+  page-footer:
+    center:
+      - href: https://slides.djnavarro.net
+        text: slides.djnavarro.net
+
+format:
+  html:
+    theme: ember.scss
+    css: styles.css
+    include-after-body: plausible.html
+
+
+
