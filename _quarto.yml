@@ -6,6 +6,7 @@ website:
   site-url: https://djnavarro.net
   repo-url: https://github.com/djnavarro/djnavarro.github.io
   open-graph: true
+  search: false
   twitter-card:
     creator: "@djnavarro"
     card-style: summary_large_image
