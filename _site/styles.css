@@ -17,3 +17,12 @@
 .card-body, .card-footer {
   background-color: #eee;
 }
+
+.card-footer {
+  border: none;
+}
+
+.card-footer > p {
+  margin-bottom: 10px;
+}
+

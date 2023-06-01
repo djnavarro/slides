@@ -12,23 +12,6 @@ page-layout: full
 
 ```{r}
 #| echo: false
-add_card <- function(src, title, text, url, link_text) {
-  lines <- c(
-    '<div class="g-col-12 g-col-md-4">',
-    '<div class="card h-100">',
-    paste0('<a href="', url, '"><img src="', src, '" class="card-img-top"></a>'),
-    '<div class="card-body">',
-    paste0('<h3 class="card-title">', title, '</h3>'),
-    paste0('<p class="card-text">', text, '</p>'),
-    paste0('<a href="', url, '" class="btn btn-primary">', link_text, '</a>'),
-    '</div>',
-    '</div>',
-    '</div>'
-  )
-  cat(lines, sep="\n")
-}
-
-
 bootstrap_card <- function(title, 
                            slug, 
                            caption = "",
@@ -44,7 +27,7 @@ bootstrap_card <- function(title,
   lines <- c(
     
     # setup card
-    '<div class="g-col-12 g-col-md-4">',
+    '<div class="g-col-12 g-col-md-6 g-col-xl-4">',
     '<div class="card h-100">',
 
     # insert image, title, and caption into the card body
