@@ -41,7 +41,7 @@ bootstrap_card <- function(title,
       '"></a>'
     ),
     '<div class="card-body">',
-    paste0('<h3 class="card-title">', title, '</h3>'),
+    paste0('<h2 class="card-title">', title, '</h2>'),
     paste0('<p class="card-text">', caption, '</p>'),
     '</div>',
     ' ',
