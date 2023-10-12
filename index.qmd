@@ -84,7 +84,7 @@ bootstrap_card(
   title = "Unpredictable paintings",
   slug = "unpredictable-paintings",
   caption = "Talk given to the statistics department at the University of Auckland for the 2023 Ihaka lecture series",
-  video_link = NULL,
+  video_link = "https://www.youtube.com/watch?v=W8rY-DNQI2Q",
   repo_link = NULL,
   slide_link = "https://djnavarro.net/slides-auckland-2023"
 )
