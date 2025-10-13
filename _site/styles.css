@@ -14,16 +14,17 @@
   padding-bottom: 50px;
 }
 
-.card-body, .card-footer {
-  background-color: #eee;
-}
-
 .card-footer {
   border: none;
+  background-color: inherit;
 }
 
 .card-footer > p {
   margin-bottom: 10px;
+}
+
+img {
+  vertical-align: top !important;
 }
 
 h2 {

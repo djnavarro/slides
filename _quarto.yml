@@ -22,6 +22,8 @@ website:
           text: Data science blog
         - href: https://art.djnavarro.net
           text: Generative art
+        - href: https://code.djnavarro.net
+          text: Software projects
         - href: https://papers.djnavarro.net
           text: Academic papers
         - href: https://djnavarro.net/sites
@@ -33,7 +35,10 @@ website:
 
 format:
   html:
-    theme: ember.scss
+    respect-user-color-scheme: true
+    theme: 
+      dark: ash.scss
+      light: ember.scss
     css: styles.css
     include-after-body: plausible.html
 
