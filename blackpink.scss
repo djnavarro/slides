@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+
+// use darkly as the base
+$theme: "darkly" !default;
+
+// import google fonts
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap';
+
+// use Atkinson Hyperlegible font if available
+$font-family-sans-serif: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// main colors
+$bg: #222;
+$body-bg: #222;
+$fg: #ccc;
+$body-fg: #ccc;
+$color: #ccc;
+$body-color: #ccc;
+
+
+// accent colours
+$primary: #cd3782;
+$secondary: #434343;
+$success: #1891B1;
+$info: #7c34db;
+$warning: #f39c12;
+$danger: #e74c3c;
+$link-color: #cd3782;
+
+/*-- scss:rules --*/
+
+.card-footer {
+  background: #222 !important;
+}
+.card {
+  --bs-card-border-color: #666 !important;
+}
+.listing-category {
+  background: #444;
+  color: #ccc !important;
+  border-color: #666 !important;
+}
+.quarto-grid-item {
+  border-color: #666 !important;  
+}
+.quarto-title-block .quarto-title-banner {
+  background: #333 !important;
+}
+pre {
+  background: #222;
+  color: #ccc;
+}
+code:not(.sourceCode) {
+  background-color: #222 !important;
+  color: #d8d !important;
+}
+pre.sourceCode {
+  background: #222;
+}
+nav .dropdown-menu a:hover,
+nav .dropdown-item:hover {
+  background-color: #cd3782;
+  color: #ccc;
+}
+.nav-footer {
+  background: #222 !important; 
+}

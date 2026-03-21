@@ -12,33 +12,33 @@ website:
     card-style: summary_large_image
   navbar:
     title: false
-    background: "#eee"
     right:
       - text: Sites
         menu:
-        - href: https://djnavarro.net
-          text: Homepage
-        - href: https://blog.djnavarro.net
-          text: Data science blog
-        - href: https://art.djnavarro.net
-          text: Generative art
-        - href: https://code.djnavarro.net
-          text: Software projects
-        - href: https://papers.djnavarro.net
-          text: Academic papers
-        - href: https://djnavarro.net/sites
-          text: More...
-  page-footer:
+          - text: Homepage
+            href: https://djnavarro.net
+          - text: Data science blog
+            href: https://blog.djnavarro.net
+          - text: Computational art
+            href: https://art.djnavarro.net
+          - text: Coding projects
+            href: https://code.djnavarro.net
+          - text: Academic papers
+            href: https://papers.djnavarro.net
+          - text: More...
+            href: https://djnavarro.net/sites/
+    page-footer:
     center:
       - href: https://slides.djnavarro.net
         text: slides.djnavarro.net
 
 format:
   html:
+    highlight-style: atom-one    
     respect-user-color-scheme: true
     theme: 
-      dark: ash.scss
-      light: ember.scss
+      dark: blackpink.scss
+      light: paleblue.scss
     css: styles.css
     include-after-body: plausible.html
 
